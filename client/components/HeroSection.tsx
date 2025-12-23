@@ -31,6 +31,31 @@ export default function HeroSection() {
             Lectures on Integral Humanism
           </p>
 
+          {/* Logos */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-4 pb-4">
+            <div className="h-24 w-24 flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6a3f67e389ad4b11905ee7b9c7d9f83b?format=webp&width=800"
+                alt="Karnataka State Open University"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="h-24 w-24 flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Feb4ac6a98d884bfa89b0c62dbd54a0c0?format=webp&width=800"
+                alt="Prain Prava"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="h-24 w-24 flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Faf66188fb7e04bfb803f4dd8a156b6ad?format=webp&width=800"
+                alt="Dr. Syama Prasad Mookerjee Research Foundation"
+                className="h-full w-full object-contain"
+              />
+            </div>
+          </div>
+
           {/* Conference Details */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto pt-4">
             <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 border border-white border-opacity-20">
