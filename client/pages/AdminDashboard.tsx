@@ -27,6 +27,9 @@ export default function AdminDashboard() {
   const [error, setError] = useState("");
   const [selectedSubmission, setSelectedSubmission] = useState<Submission | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const [isUploadingGoogleDrive, setIsUploadingGoogleDrive] = useState(false);
+  const [googleDriveSuccess, setGoogleDriveSuccess] = useState("");
+  const [googleDriveError, setGoogleDriveError] = useState("");
 
   useEffect(() => {
     loadSubmissions();
