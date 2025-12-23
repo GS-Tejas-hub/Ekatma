@@ -64,39 +64,35 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="space-y-8">
-          {/* Subtitle - Centered */}
-          <div className="text-center">
-            <div className="inline-block">
-              <span className="inline-block px-4 py-2 bg-secondary bg-opacity-20 border border-secondary rounded-full text-white font-semibold text-sm">
-                International Academic Conference
-              </span>
-            </div>
+        <div className="text-center space-y-8">
+          {/* Subtitle */}
+          <div className="inline-block">
+            <span className="inline-block px-4 py-2 bg-secondary bg-opacity-20 border border-secondary rounded-full text-white font-semibold text-sm">
+              International Academic Conference
+            </span>
           </div>
 
-          {/* Title and Countdown - Side by Side */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Left: Main Title */}
-            <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Ekatma Manav Darshan
-              </h1>
-              <p className="text-2xl sm:text-3xl font-semibold text-secondary">
-                Bharat's Worldview
-              </p>
-            </div>
+          {/* Main Title */}
+          <div className="space-y-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              Ekatma Manav Darshan
+            </h1>
+            <p className="text-2xl sm:text-3xl font-semibold text-secondary">
+              Bharat's Worldview
+            </p>
+          </div>
 
-            {/* Right: Countdown Timer */}
-            <div className="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 sm:p-8 border border-white border-opacity-20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-4">🎯 Countdown</h3>
-              {timeRemaining.isEnded ? (
-                <p className="text-lg font-semibold text-secondary">Conference is happening!</p>
-              ) : (
-                <div className="grid grid-cols-4 gap-2 sm:gap-3">
+          {/* Compact Countdown Timer Below Title */}
+          <div className="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 inline-block">
+            {timeRemaining.isEnded ? (
+              <p className="text-base font-semibold text-secondary">Conference is happening! 🎉</p>
+            ) : (
+              <div>
+                <div className="grid grid-cols-4 gap-2">
                   {/* Days */}
                   <div className="flex flex-col items-center">
-                    <div className="bg-primary rounded-lg px-2 sm:px-3 py-2">
-                      <div className="text-lg sm:text-xl font-bold text-white">
+                    <div className="bg-primary rounded px-2 py-1">
+                      <div className="text-sm sm:text-base font-bold text-white">
                         {String(timeRemaining.days).padStart(2, "0")}
                       </div>
                     </div>
@@ -105,8 +101,8 @@ export default function HeroSection() {
 
                   {/* Hours */}
                   <div className="flex flex-col items-center">
-                    <div className="bg-secondary rounded-lg px-2 sm:px-3 py-2">
-                      <div className="text-lg sm:text-xl font-bold text-white">
+                    <div className="bg-secondary rounded px-2 py-1">
+                      <div className="text-sm sm:text-base font-bold text-white">
                         {String(timeRemaining.hours).padStart(2, "0")}
                       </div>
                     </div>
@@ -115,8 +111,8 @@ export default function HeroSection() {
 
                   {/* Minutes */}
                   <div className="flex flex-col items-center">
-                    <div className="bg-accent rounded-lg px-2 sm:px-3 py-2">
-                      <div className="text-lg sm:text-xl font-bold text-white">
+                    <div className="bg-accent rounded px-2 py-1">
+                      <div className="text-sm sm:text-base font-bold text-white">
                         {String(timeRemaining.minutes).padStart(2, "0")}
                       </div>
                     </div>
@@ -125,28 +121,26 @@ export default function HeroSection() {
 
                   {/* Seconds */}
                   <div className="flex flex-col items-center">
-                    <div className="bg-yellow-600 rounded-lg px-2 sm:px-3 py-2">
-                      <div className="text-lg sm:text-xl font-bold text-white">
+                    <div className="bg-yellow-600 rounded px-2 py-1">
+                      <div className="text-sm sm:text-base font-bold text-white">
                         {String(timeRemaining.seconds).padStart(2, "0")}
                       </div>
                     </div>
                     <p className="text-xs font-semibold text-white mt-1">Seconds</p>
                   </div>
                 </div>
-              )}
-              <p className="text-xs sm:text-sm text-gray-300 mt-3">
-                until Conference • March 25-27, 2026
-              </p>
-            </div>
+                <p className="text-xs text-gray-300 mt-2">
+                  until Conference • March 25-27, 2026
+                </p>
+              </div>
+            )}
           </div>
 
-          {/* Tagline - Centered Below */}
-          <div className="text-center">
-            <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
-              Commemorating 60 Years of Pandit Deendayal Upadhyaya's Historic
-              Lectures on Integral Humanism
-            </p>
-          </div>
+          {/* Tagline */}
+          <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
+            Commemorating 60 Years of Pandit Deendayal Upadhyaya's Historic
+            Lectures on Integral Humanism
+          </p>
 
           {/* Logos */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-8 pb-8 flex-wrap">
