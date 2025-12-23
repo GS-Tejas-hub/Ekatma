@@ -100,7 +100,7 @@ export default function HeroSection() {
           </div>
 
           {/* About Deendayal & Image Slider */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-8 pb-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center pt-6 pb-6 max-w-6xl mx-auto">
             {/* Left: Text Content */}
             <div className="space-y-4">
               <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
