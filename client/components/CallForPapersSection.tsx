@@ -47,7 +47,7 @@ export default function CallForPapersSection() {
     },
     { label: "Abstract", value: "200–250 words with 5–6 keywords" },
     { label: "Format", value: "APA citation style, MS Word (.doc/.docx)" },
-    { label: "Submission", value: "thebharatsworldview@gmail.com" },
+    { label: "Language", value: "English" },
     { label: "Deadline", value: "25 February 2026" },
   ];
 
