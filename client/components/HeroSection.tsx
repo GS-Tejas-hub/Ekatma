@@ -43,11 +43,11 @@ export default function HeroSection() {
               alt="Prain Prava"
               className="h-40 w-auto object-contain"
             />
-            <div className="h-40 max-w-48 overflow-hidden flex items-center">
+            <div className="h-48 max-w-36 overflow-hidden flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Faf66188fb7e04bfb803f4dd8a156b6ad?format=webp&width=800"
                 alt="Dr. Syama Prasad Mookerjee Research Foundation"
-                className="h-40 w-auto object-contain"
+                className="h-48 w-auto object-contain"
               />
             </div>
           </div>
