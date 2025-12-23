@@ -70,7 +70,6 @@ export default function Header() {
                   className="text-base font-bold text-foreground hover:text-primary transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {link.label}
@@ -81,7 +80,6 @@ export default function Header() {
                 className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-center hover:bg-primary-700 transition-colors"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.scrollTo(0, 0);
                 }}
               >
                 Register Now
