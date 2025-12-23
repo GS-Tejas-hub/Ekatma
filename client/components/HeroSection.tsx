@@ -1,6 +1,61 @@
+import { useEffect, useState } from "react";
 import ImageSlider from "./ImageSlider";
 
+interface TimeRemaining {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  isEnded: boolean;
+}
+
 export default function HeroSection() {
+  const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+    isEnded: false,
+  });
+
+  useEffect(() => {
+    const calculateTimeRemaining = () => {
+      const conferenceDate = new Date(2026, 2, 25).getTime();
+      const now = new Date().getTime();
+      const difference = conferenceDate - now;
+
+      if (difference <= 0) {
+        setTimeRemaining({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+          isEnded: true,
+        });
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      setTimeRemaining({
+        days,
+        hours,
+        minutes,
+        seconds,
+        isEnded: false,
+      });
+    };
+
+    calculateTimeRemaining();
+    const timer = setInterval(calculateTimeRemaining, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-primary-700 to-slate-900 py-20 md:py-32">
       {/* Decorative elements */}
