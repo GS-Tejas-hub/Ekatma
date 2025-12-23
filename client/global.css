@@ -13,13 +13,13 @@
   */
   :root {
     --background: 0 0% 100%;
-    --foreground: 15 20% 15%;
+    --foreground: 25 25% 35%;
 
     --card: 0 0% 100%;
-    --card-foreground: 15 20% 15%;
+    --card-foreground: 25 25% 35%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 15 20% 15%;
+    --popover-foreground: 25 25% 35%;
 
     --primary: 19 100% 51%;
     --primary-foreground: 0 0% 100%;
