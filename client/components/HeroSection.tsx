@@ -81,7 +81,7 @@ export default function HeroSection() {
           </p>
 
           {/* Logos */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-8 pb-8 flex-wrap">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-6 pb-6 flex-wrap">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6a3f67e389ad4b11905ee7b9c7d9f83b?format=webp&width=800"
               alt="Karnataka State Open University"
