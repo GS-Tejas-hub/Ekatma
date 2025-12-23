@@ -102,6 +102,80 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleUploadToGoogleDrive = async (format: "csv" | "json") => {
+    setIsUploadingGoogleDrive(true);
+    setGoogleDriveError("");
+    setGoogleDriveSuccess("");
+
+    try {
+      // First, get the data to export
+      let csvContent = "";
+
+      if (format === "csv") {
+        // Generate CSV content
+        let csv =
+          "Submission ID,Paper Title,Category,Authors (Names),Authors (Emails),Authors (Affiliations),Abstract,Keywords,Submitted Date\n";
+
+        submissions.forEach((submission) => {
+          const authors = submission.authors.map((a) => a.name).join("; ");
+          const emails = submission.authors.map((a) => a.email).join("; ");
+          const affiliations = submission.authors
+            .map((a) => a.affiliation)
+            .join("; ");
+
+          const escapeCSV = (field: string) =>
+            `"${field.replace(/"/g, '""')}"`;
+
+          csv += `${escapeCSV(submission.id)},`;
+          csv += `${escapeCSV(submission.title)},`;
+          csv += `${escapeCSV(submission.category)},`;
+          csv += `${escapeCSV(authors)},`;
+          csv += `${escapeCSV(emails)},`;
+          csv += `${escapeCSV(affiliations)},`;
+          csv += `${escapeCSV(submission.abstract)},`;
+          csv += `${escapeCSV(submission.keywords)},`;
+          csv += `${escapeCSV(submission.submittedAt)}\n`;
+        });
+
+        csvContent = csv;
+      }
+
+      // Upload to Google Drive
+      const response = await fetch(`/api/admin/google-drive/upload-${format}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          csvContent: format === "csv" ? csvContent : undefined,
+          jsonContent:
+            format === "json"
+              ? JSON.stringify(submissions, null, 2)
+              : undefined,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.details || "Failed to upload to Google Drive");
+      }
+
+      const data = await response.json();
+      setGoogleDriveSuccess(
+        `✅ Successfully uploaded to Google Drive! File: ${data.file.name}`
+      );
+
+      // Auto-clear success message after 5 seconds
+      setTimeout(() => setGoogleDriveSuccess(""), 5000);
+    } catch (err) {
+      setGoogleDriveError(
+        err instanceof Error ? err.message : "Failed to upload to Google Drive"
+      );
+    } finally {
+      setIsUploadingGoogleDrive(false);
+    }
+  };
+
   const filteredSubmissions = submissions.filter((sub) =>
     sub.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     sub.authors.some((a) =>
