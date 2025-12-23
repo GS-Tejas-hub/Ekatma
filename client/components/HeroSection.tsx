@@ -58,7 +58,7 @@ export default function HeroSection() {
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center space-y-6">
           {/* International Academic Conference - At the very top */}
-          <div className="inline-block pt-4">
+          <div className="inline-block">
             <span className="inline-block px-6 py-2 bg-secondary bg-opacity-20 border border-secondary rounded-full text-white font-bold text-base">
               International Academic Conference
             </span>
