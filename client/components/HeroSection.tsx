@@ -49,7 +49,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-primary-700 to-slate-900 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-primary-700 to-slate-900 py-8 md:py-16">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-secondary-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
