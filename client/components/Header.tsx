@@ -32,20 +32,20 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#registration"
+            <Link
+              to="/registration"
               className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
               Register Now
-            </a>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
