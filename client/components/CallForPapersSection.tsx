@@ -100,27 +100,46 @@ export default function CallForPapersSection() {
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div className="bg-white border border-primary-200 rounded-lg p-8">
             <h3 className="text-xl font-bold text-primary mb-6">
-              Submit Your Paper via CMT
+              How to Submit
             </h3>
-            <div className="space-y-4 mb-6">
-              <p className="text-foreground text-sm leading-relaxed">
-                Papers should be submitted through the Microsoft Conference Management Toolkit (CMT).
-              </p>
-              <div className="bg-blue-50 p-6 rounded-md border border-blue-300">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🔗</span>
-                  <div>
-                    <p className="font-semibold text-foreground text-base mb-2">
-                      CMT Submission Link Coming Shortly
-                    </p>
-                    <p className="text-sm text-black">
-                      The CMT submission portal for the Ekatma Manav Darshan conference will be available soon. Please check back here or subscribe to updates for the direct submission link.
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-3">
-                      <strong>Submission Deadline:</strong> 25 February 2026
-                    </p>
-                  </div>
-                </div>
+            <div className="space-y-6 mb-6">
+              <div className="bg-amber-50 p-4 rounded-md border border-amber-200">
+                <p className="text-sm text-black leading-relaxed">
+                  <strong className="text-foreground">Before you submit your paper:</strong> You will need to have a CMT (Conference Management Toolkit) account. If you don't already have one, create an account using the link below.
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-foreground text-sm mb-3">Step 1: Create or Access Your CMT Account</p>
+                <a
+                  href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-center text-sm"
+                >
+                  Create CMT Account →
+                </a>
+              </div>
+
+              <div>
+                <p className="font-semibold text-foreground text-sm mb-3">Step 2: Submit Your Paper</p>
+                <p className="text-sm text-black mb-3">
+                  Once you have your CMT account, follow the submission guidelines:
+                </p>
+                <a
+                  href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-4 py-3 bg-white border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors text-center text-sm"
+                >
+                  Author Submission Guide →
+                </a>
+              </div>
+
+              <div className="bg-blue-50 p-4 rounded-md border border-blue-200">
+                <p className="text-sm text-black">
+                  <strong>Submission Deadline:</strong> 25 February 2026
+                </p>
               </div>
             </div>
           </div>
