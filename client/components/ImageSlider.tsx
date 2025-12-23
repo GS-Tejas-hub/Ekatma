@@ -63,7 +63,7 @@ export default function ImageSlider() {
               <p className="text-base font-semibold mb-2">
                 {image.caption}
               </p>
-              <p className="text-xs text-slate-500">
+              <p className="text-base text-slate-500">
                 Source: {image.source}
               </p>
             </div>
