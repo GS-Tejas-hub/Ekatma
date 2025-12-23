@@ -73,24 +73,6 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Conference Details */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto pt-4">
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 border border-white border-opacity-20">
-              <p className="text-gray-300 text-sm font-medium mb-2">Dates</p>
-              <p className="text-white font-bold text-lg">
-                March 25-27, 2025
-              </p>
-            </div>
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 border border-white border-opacity-20">
-              <p className="text-gray-300 text-sm font-medium mb-2">Location</p>
-              <p className="text-white font-bold text-lg">Mysore, India</p>
-            </div>
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 border border-white border-opacity-20">
-              <p className="text-gray-300 text-sm font-medium mb-2">Theme</p>
-              <p className="text-white font-bold text-lg">Philosophy</p>
-            </div>
-          </div>
-
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <a
