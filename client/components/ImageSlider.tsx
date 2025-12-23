@@ -35,20 +35,20 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="w-full max-w-2xl mx-auto pt-8 pb-8">
-      <div className="relative overflow-hidden rounded-lg shadow-2xl aspect-square md:aspect-video">
-        <div className="relative w-full h-full">
+    <div className="w-full max-w-4xl mx-auto pt-8 pb-8">
+      <div className="relative overflow-hidden rounded-lg shadow-2xl bg-white" style={{ minHeight: "500px" }}>
+        <div className="relative w-full h-full flex items-center justify-center">
           {images.map((image, index) => (
             <div
               key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
+              className={`absolute inset-0 transition-opacity duration-1000 flex items-center justify-center bg-white ${
                 index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                className="w-auto h-auto max-w-full max-h-full object-contain p-4"
               />
             </div>
           ))}
