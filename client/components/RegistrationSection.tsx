@@ -18,7 +18,6 @@ export default function RegistrationSection() {
         "All meals included",
         "Networking certificate",
       ],
-      popular: false,
       cta: "Register as Student",
     },
     {
@@ -34,7 +33,6 @@ export default function RegistrationSection() {
         "Networking certificate",
         "Paper presentation opportunity",
       ],
-      popular: true,
       cta: "Register as Research Scholar",
     },
     {
@@ -52,7 +50,6 @@ export default function RegistrationSection() {
         "VIP networking dinner",
         "Certificate of participation",
       ],
-      popular: false,
       cta: "Register as Academician",
     },
   ];
