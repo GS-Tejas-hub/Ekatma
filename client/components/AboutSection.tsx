@@ -159,19 +159,48 @@ export default function AboutSection() {
               {/* Publishing Partners */}
               <div className="bg-white rounded-lg p-6 border border-blue-100">
                 <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 items-center">
                   {[
-                    { name: "Springer", desc: "Publisher" },
-                    { name: "Web of Science", desc: "Indexing" },
-                    { name: "Scopus", desc: "Indexing" },
-                    { name: "Scite.ai", desc: "Analytics" },
-                    { name: "SJR", desc: "Metrics" },
-                    { name: "ICPR", desc: "Organization" },
+                    {
+                      name: "Springer",
+                      desc: "Publisher",
+                      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Springer_logo.svg"
+                    },
+                    {
+                      name: "Web of Science",
+                      desc: "Indexing",
+                      logo: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Web_of_Science_Logo_12.2023.svg"
+                    },
+                    {
+                      name: "Scopus",
+                      desc: "Indexing",
+                      logo: "https://upload.wikimedia.org/wikipedia/commons/6/63/Scopus_logo.svg"
+                    },
+                    {
+                      name: "Scite.ai",
+                      desc: "Analytics",
+                      logo: "https://scite.ai/static/logo.png"
+                    },
+                    {
+                      name: "SJR",
+                      desc: "Metrics",
+                      logo: "https://www.scimagojr.com/logo.png"
+                    },
+                    {
+                      name: "ICPR",
+                      desc: "Organization",
+                      logo: "https://via.placeholder.com/120x80?text=ICPR"
+                    },
                   ].map((partner, idx) => (
-                    <div key={idx} className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg">
-                      <div className="h-12 w-12 bg-primary-100 rounded flex items-center justify-center mb-2 text-xs font-bold text-primary">
-                        {partner.name.split(' ')[0]}
-                      </div>
+                    <div key={idx} className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="h-12 w-auto object-contain mb-2"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
                       <p className="text-xs font-medium text-foreground">{partner.name}</p>
                       <p className="text-xs text-muted-foreground">{partner.desc}</p>
                     </div>
