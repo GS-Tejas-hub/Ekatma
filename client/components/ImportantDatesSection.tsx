@@ -22,7 +22,7 @@ export default function ImportantDatesSection() {
     },
     {
       milestone: "Conference Dates",
-      date: "25-27 March 2025",
+      date: "25-27 March 2026",
       icon: "📅",
     },
   ];
