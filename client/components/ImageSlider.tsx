@@ -35,24 +35,22 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="w-full max-w-4xl mx-auto pt-8 pb-8">
-      <div className="relative overflow-hidden rounded-lg shadow-2xl bg-white" style={{ minHeight: "500px" }}>
-        <div className="relative w-full h-full flex items-center justify-center">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 flex items-center justify-center bg-white ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-auto h-auto max-w-full max-h-full object-contain p-4"
-              />
-            </div>
-          ))}
-        </div>
+    <div className="w-full max-w-5xl mx-auto pt-8 pb-8 px-4">
+      <div className="relative overflow-hidden rounded-lg shadow-2xl bg-white w-full" style={{ minHeight: "600px" }}>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 flex items-center justify-center ${
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="max-w-full max-h-full object-contain p-6"
+            />
+          </div>
+        ))}
 
         {/* Slide indicators */}
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-20">
@@ -60,11 +58,11 @@ export default function ImageSlider() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
+              className={`transition-all ${
                 index === currentIndex
-                  ? "bg-white w-6"
-                  : "bg-white bg-opacity-50 hover:bg-opacity-75"
-              }`}
+                  ? "bg-slate-700 w-6 h-2"
+                  : "bg-slate-400 w-2 h-2 hover:bg-slate-500"
+              } rounded-full`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
