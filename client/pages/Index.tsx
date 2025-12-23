@@ -12,6 +12,7 @@ export default function Index() {
       <Header />
       <HeroSection />
       <AboutSection />
+      <ImportantDatesSection />
       <CallForPapersSection />
       <RegistrationSection />
       <Footer />
