@@ -83,20 +83,8 @@ export default function RegistrationSection() {
           {registrationTiers.map((tier) => (
             <div
               key={tier.id}
-              className={`relative rounded-xl border-2 transition-all duration-300 ${
-                tier.popular
-                  ? "border-secondary bg-gradient-to-b from-secondary-50 to-white shadow-xl scale-105"
-                  : "border-border bg-white hover:shadow-lg"
-              }`}
+              className="relative rounded-xl border-2 border-border bg-white hover:shadow-lg transition-all duration-300"
             >
-              {/* Popular Badge */}
-              {tier.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-secondary text-white px-4 py-1 rounded-full text-sm font-bold">
-                    Most Popular
-                  </span>
-                </div>
-              )}
 
               <div className="p-8">
                 {/* Tier Info */}
