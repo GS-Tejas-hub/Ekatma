@@ -63,7 +63,7 @@ export default function ImportantDatesSection() {
 
           {/* Notice */}
           <div className="mt-12 p-6 bg-primary-50 border border-primary-200 rounded-lg">
-            <p className="text-sm text-black text-center">
+            <p className="text-base text-black text-center">
               <strong>⚠️ Important:</strong> All dates are subject to change. Please check this website regularly for any updates.
             </p>
           </div>

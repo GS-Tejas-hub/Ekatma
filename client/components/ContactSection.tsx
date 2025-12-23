@@ -22,11 +22,11 @@ export default function ContactSection() {
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="text-sm text-black font-semibold mb-1">Name</p>
+                  <p className="text-base text-black font-semibold mb-1">Name</p>
                   <p className="text-black">Dr. Niranjan B Poojar</p>
                 </div>
                 <div>
-                  <p className="text-sm text-black font-semibold mb-1">Phone</p>
+                  <p className="text-base text-black font-semibold mb-1">Phone</p>
                   <p className="text-black">
                     <a href="tel:+919164582650" className="text-primary hover:underline">
                       +91 9164582650
