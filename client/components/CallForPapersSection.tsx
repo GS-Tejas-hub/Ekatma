@@ -114,9 +114,12 @@ export default function CallForPapersSection() {
                 </li>
               ))}
             </ul>
-            <button className="w-full mt-8 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors">
+            <Link
+              to="/submit-paper"
+              className="block w-full mt-8 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-center"
+            >
               Submit Your Paper
-            </button>
+            </Link>
           </div>
 
           <div className="space-y-6">
