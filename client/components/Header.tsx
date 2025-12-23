@@ -56,7 +56,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -67,6 +67,13 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
+
+            {/* Days Countdown */}
+            <div className="flex flex-col items-center gap-0 px-4 py-2 bg-primary-50 rounded-lg border border-primary-200">
+              <p className="text-xs font-bold text-primary">Days Left</p>
+              <p className="text-xl font-bold text-primary">{timeRemaining.days}</p>
+            </div>
+
             <Link
               to="/registration"
               onClick={() => window.scrollTo(0, 0)}
