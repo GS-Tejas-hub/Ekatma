@@ -250,6 +250,60 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
+        {/* Objectives of the Conference */}
+        <div className="mt-16 bg-gradient-to-r from-indigo-50 to-purple-50 border border-indigo-200 rounded-lg p-8">
+          <h3 className="text-2xl font-bold text-foreground mb-8">
+            Objectives of the Conference
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {[
+              {
+                number: 1,
+                title: "Revisit Core Philosophy",
+                description: "To revisit the core philosophy of Ekatma Manava Darshan and understand its relevance in the 21st century."
+              },
+              {
+                number: 2,
+                title: "Address Modern Challenges",
+                description: "To explore how Hindu thought can address social, economic, political, and technological challenges faced by today's world."
+              },
+              {
+                number: 3,
+                title: "Present as Development Model",
+                description: "To present Ekatma Manava Darshan as a development model compared to materialist and socialist frameworks like the SDGs."
+              },
+              {
+                number: 4,
+                title: "Encourage Academic Dialogue",
+                description: "To encourage academic dialogue across disciplines and promote research rooted in Hindu civilizational wisdom."
+              },
+              {
+                number: 5,
+                title: "Inspire Integration of Dharma",
+                description: "To inspire policymakers, scholars, and students to integrate Dharma-based thinking into governance, education, and societal development."
+              },
+            ].map((objective, idx) => (
+              <div key={idx} className="bg-white rounded-lg p-6 border border-indigo-100 hover:shadow-md transition-shadow">
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg">
+                      {objective.number}
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-foreground mb-2">
+                      {objective.title}
+                    </h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {objective.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
