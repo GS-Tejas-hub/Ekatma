@@ -11,9 +11,9 @@ import Footer from "@/components/Footer";
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-      <CountdownTimer />
       <ImportantDatesBanner />
       <Header />
+      <CountdownTimer />
       <HeroSection />
       <AboutSection />
       <ImportantDatesSection />
