@@ -95,7 +95,7 @@ export default function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
             <a
               href="#registration"
-              className="px-8 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondary-600 transition-colors shadow-lg"
+              className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
             >
               Register Now
             </a>
@@ -103,7 +103,7 @@ export default function HeroSection() {
               href="#papers"
               className="px-8 py-3 bg-white bg-opacity-20 text-white font-semibold rounded-lg border border-white hover:bg-opacity-30 transition-colors backdrop-blur-sm"
             >
-              Submit Paper
+              Call for Papers
             </a>
           </div>
         </div>
