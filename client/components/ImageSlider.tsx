@@ -4,22 +4,27 @@ const images = [
   {
     src: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fea5f4697130f451281b34d8a5eaa4969?format=webp&width=800",
     alt: "Deendayal Upadhyaya 2015 stamp",
+    caption: "Commemorative Stamp (2015)",
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fb1e7622023cb4547bc5517005bc9c444?format=webp&width=800",
     alt: "Deendayal Upadhyaya 2016 stamp",
+    caption: "Commemorative Stamp (2016)",
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fc0a92ddcab7e4b2898df3f8667fc758d?format=webp&width=800",
     alt: "Deendayal Upadhyaya 2018 stamp",
+    caption: "Commemorative Stamp (2018)",
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F3e2506006fa941c49d548fe8f31aaee6?format=webp&width=800",
     alt: "Pandit Deendayal Upadhyaya bust",
+    caption: "Bust of Pandit Deendayal Upadhyaya",
   },
   {
     src: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F4b24d6ad7c4846b996e583fdf1c83fef?format=webp&width=800",
     alt: "PM Modi offering Pushpanjali on Deendayal statue",
+    caption: "PM Modi Offering Pushpanjali at Deendayal Statue",
   },
 ];
 
