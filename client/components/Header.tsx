@@ -37,7 +37,7 @@ export default function Header() {
                 key={link.label}
                 to={link.href}
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-sm font-medium text-foreground hover:text-primary transition-colors duration-200"
+                className="text-sm font-bold text-foreground hover:text-primary transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -69,7 +69,7 @@ export default function Header() {
                 <Link
                   key={link.label}
                   to={link.href}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="text-sm font-bold text-foreground hover:text-primary transition-colors"
                   onClick={() => {
                     setIsMenuOpen(false);
                     window.scrollTo(0, 0);
