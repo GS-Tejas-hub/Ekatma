@@ -56,7 +56,7 @@ export default function TopRightCountdown() {
   }, []);
 
   return (
-    <div className="fixed top-24 right-4 sm:right-6 lg:right-8 z-40 bg-black bg-opacity-40 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-primary border-opacity-50 shadow-lg w-64 sm:w-72">
+    <div className="fixed top-24 left-4 sm:left-6 lg:left-8 z-40 bg-black bg-opacity-40 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-primary border-opacity-50 shadow-lg w-64 sm:w-72">
       {timeRemaining.isEnded ? (
         <p className="text-base font-semibold text-secondary text-center">Conference Live! 🎉</p>
       ) : (
