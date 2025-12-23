@@ -58,53 +58,20 @@ export default function TopRightCountdown() {
   return (
     <div className="fixed top-24 left-4 sm:left-6 lg:left-8 z-40 bg-black bg-opacity-40 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-primary border-opacity-50 shadow-lg w-64 sm:w-72">
       {timeRemaining.isEnded ? (
-        <p className="text-base font-semibold text-secondary text-center">Conference Live! 🎉</p>
+        <div className="text-center">
+          <p className="text-2xl font-bold text-secondary mb-1">🎉</p>
+          <p className="text-sm font-semibold text-white">Conference Live!</p>
+        </div>
       ) : (
-        <div>
-          <h4 className="text-sm font-bold text-white mb-3 text-center">Conference Countdown</h4>
-          <div className="grid grid-cols-4 gap-2">
-            {/* Days */}
-            <div className="flex flex-col items-center">
-              <div className="bg-primary rounded px-2 py-2 w-full">
-                <div className="text-sm sm:text-base font-bold text-white text-center">
-                  {String(timeRemaining.days).padStart(2, "0")}
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-white mt-1">Days</p>
-            </div>
-
-            {/* Hours */}
-            <div className="flex flex-col items-center">
-              <div className="bg-secondary rounded px-2 py-2 w-full">
-                <div className="text-sm sm:text-base font-bold text-white text-center">
-                  {String(timeRemaining.hours).padStart(2, "0")}
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-white mt-1">Hours</p>
-            </div>
-
-            {/* Minutes */}
-            <div className="flex flex-col items-center">
-              <div className="bg-accent rounded px-2 py-2 w-full">
-                <div className="text-sm sm:text-base font-bold text-white text-center">
-                  {String(timeRemaining.minutes).padStart(2, "0")}
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-white mt-1">Minutes</p>
-            </div>
-
-            {/* Seconds */}
-            <div className="flex flex-col items-center">
-              <div className="bg-yellow-600 rounded px-2 py-2 w-full">
-                <div className="text-sm sm:text-base font-bold text-white text-center">
-                  {String(timeRemaining.seconds).padStart(2, "0")}
-                </div>
-              </div>
-              <p className="text-xs font-semibold text-white mt-1">Seconds</p>
+        <div className="flex flex-col items-center gap-2">
+          <p className="text-xs font-bold text-gray-300">Days Until</p>
+          <div className="bg-primary rounded-lg px-6 py-4 w-full">
+            <div className="text-4xl sm:text-5xl font-bold text-white text-center">
+              {String(timeRemaining.days).padStart(2, "0")}
             </div>
           </div>
-          <p className="text-xs text-gray-300 text-center mt-3">
-            until March 25-27, 2026
+          <p className="text-xs text-gray-300 text-center">
+            Conference
           </p>
         </div>
       )}
