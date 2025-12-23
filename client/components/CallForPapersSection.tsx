@@ -82,7 +82,7 @@ export default function CallForPapersSection() {
                   {topic.items.map((item, itemIdx) => (
                     <li
                       key={itemIdx}
-                      className="flex items-start gap-2 text-sm text-muted-foreground"
+                      className="flex items-start gap-2 text-sm text-black font-medium"
                     >
                       <span className="text-secondary font-bold flex-shrink-0 mt-1">
                         •
