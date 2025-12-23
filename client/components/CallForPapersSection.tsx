@@ -106,33 +106,21 @@ export default function CallForPapersSection() {
               <p className="text-foreground text-sm leading-relaxed">
                 Papers should be submitted through the Microsoft Conference Management Toolkit (CMT).
               </p>
-              <div className="bg-primary-50 p-4 rounded-md border border-primary-200">
-                <p className="font-semibold text-foreground text-sm mb-2">Before Submitting:</p>
-                <p className="text-sm text-black mb-3">
-                  You will need a CMT account to submit your paper. If you don't have one, create it here:
-                </p>
-                <a
-                  href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 bg-white border border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors text-center text-sm mb-3"
-                >
-                  Create CMT Account
-                </a>
-              </div>
-              <div className="bg-primary-50 p-4 rounded-md border border-primary-200">
-                <p className="font-semibold text-foreground text-sm mb-2">Submission Instructions:</p>
-                <p className="text-sm text-black mb-3">
-                  For detailed instructions on how to submit your paper to CMT, please refer to:
-                </p>
-                <a
-                  href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full px-4 py-2 bg-white border border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors text-center text-sm"
-                >
-                  Author Submission Guide
-                </a>
+              <div className="bg-blue-50 p-6 rounded-md border border-blue-300">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🔗</span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base mb-2">
+                      CMT Submission Link Coming Shortly
+                    </p>
+                    <p className="text-sm text-black">
+                      The CMT submission portal for the Ekatma Manav Darshan conference will be available soon. Please check back here or subscribe to updates for the direct submission link.
+                    </p>
+                    <p className="text-sm text-muted-foreground mt-3">
+                      <strong>Submission Deadline:</strong> 25 February 2026
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
