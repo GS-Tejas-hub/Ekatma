@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold mb-4 text-white">Conference</h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li>
                 <a
                   href="#about"
@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4 text-white">Contact</h4>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-2 text-base text-gray-300">
               <li>
                 <p className="font-medium">Email</p>
                 <a
@@ -86,7 +86,7 @@ export default function Footer() {
           {/* Info */}
           <div>
             <h4 className="font-semibold mb-4 text-white">Conference Info</h4>
-            <ul className="space-y-3 text-sm text-gray-300">
+            <ul className="space-y-3 text-base text-gray-300">
               <li>
                 <p className="font-medium text-white">Dates</p>
                 <p>March 25-27, 2026</p>
@@ -108,35 +108,35 @@ export default function Footer() {
           {/* Key Info Grid */}
           <div className="grid sm:grid-cols-3 gap-6 mb-8">
             <div className="text-center sm:text-left">
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">
+              <p className="text-base text-gray-400 uppercase tracking-wider mb-1">
                 Published In
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-base font-semibold">
                 Journal of Indian Council of Philosophical Research (JICPR)
               </p>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-base text-gray-400 mt-1">
                 Indexed in Web of Science & Scopus
               </p>
             </div>
 
             <div className="text-center">
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">
+              <p className="text-base text-gray-400 uppercase tracking-wider mb-1">
                 In Collaboration With
               </p>
-              <p className="text-sm font-semibold">Springer</p>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-base font-semibold">Springer</p>
+              <p className="text-base text-gray-400 mt-1">
                 Global Academic Publisher
               </p>
             </div>
 
             <div className="text-center sm:text-right">
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-1">
+              <p className="text-base text-gray-400 uppercase tracking-wider mb-1">
                 Supporting Organizations
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-base font-semibold">
                 ICPR & Research Institutions
               </p>
-              <p className="text-xs text-gray-400 mt-1">
+              <p className="text-base text-gray-400 mt-1">
                 Promoting civilizational research
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function Footer() {
 
           {/* Bottom Section */}
           <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between">
-            <div className="text-sm text-gray-400 mb-6 md:mb-0">
+            <div className="text-base text-gray-400 mb-6 md:mb-0">
               <p>
                 © {currentYear} International Academic Conference on Ekatma
                 Manav Darshan. All rights reserved.
@@ -154,19 +154,19 @@ export default function Footer() {
             <div className="flex gap-6">
               <a
                 href="#"
-                className="text-gray-400 hover:text-secondary text-sm transition-colors"
+                className="text-gray-400 hover:text-secondary text-base transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-secondary text-sm transition-colors"
+                className="text-gray-400 hover:text-secondary text-base transition-colors"
               >
                 Terms & Conditions
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-secondary text-sm transition-colors"
+                className="text-gray-400 hover:text-secondary text-base transition-colors"
               >
                 Code of Conduct
               </a>
@@ -176,14 +176,14 @@ export default function Footer() {
 
         {/* Philosophy Statement */}
         <div className="mt-12 bg-gradient-to-r from-primary-900 to-slate-900 rounded-lg p-6 border border-primary-700">
-          <p className="text-sm italic text-gray-200 leading-relaxed">
+          <p className="text-base italic text-gray-200 leading-relaxed">
             "Ekatma Manav Darshan proposes a vision for restoring social harmony
             through Dharma—the ethical principle that sustains equilibrium in
             individual, social, ecological, and cosmic dimensions. Society is
             held not by the assertion of rights but by Kartavya: the mutual
             duties that arise from recognition of shared existence."
           </p>
-          <p className="text-xs text-gray-400 mt-3">
+          <p className="text-base text-gray-400 mt-3">
             — Pandit Deendayal Upadhyaya
           </p>
         </div>
