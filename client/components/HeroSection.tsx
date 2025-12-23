@@ -1,3 +1,5 @@
+import ImageSlider from "./ImageSlider";
+
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-primary-700 to-slate-900 py-20 md:py-32">
