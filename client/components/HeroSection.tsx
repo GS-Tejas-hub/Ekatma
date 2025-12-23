@@ -88,6 +88,59 @@ export default function HeroSection() {
             Lectures on Integral Humanism
           </p>
 
+          {/* Countdown Timer */}
+          <div className="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-6 sm:p-8 border border-white border-opacity-20 inline-block">
+            <h3 className="text-xl font-bold text-white mb-4">🎯 Conference Countdown</h3>
+            {timeRemaining.isEnded ? (
+              <p className="text-lg font-semibold text-secondary">Conference is now happening!</p>
+            ) : (
+              <div className="grid grid-cols-4 gap-3 sm:gap-4">
+                {/* Days */}
+                <div className="flex flex-col items-center">
+                  <div className="bg-primary rounded-lg px-3 sm:px-4 py-2 sm:py-3">
+                    <div className="text-xl sm:text-2xl font-bold text-white">
+                      {String(timeRemaining.days).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <p className="text-xs font-semibold text-white mt-1">Days</p>
+                </div>
+
+                {/* Hours */}
+                <div className="flex flex-col items-center">
+                  <div className="bg-secondary rounded-lg px-3 sm:px-4 py-2 sm:py-3">
+                    <div className="text-xl sm:text-2xl font-bold text-white">
+                      {String(timeRemaining.hours).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <p className="text-xs font-semibold text-white mt-1">Hours</p>
+                </div>
+
+                {/* Minutes */}
+                <div className="flex flex-col items-center">
+                  <div className="bg-accent rounded-lg px-3 sm:px-4 py-2 sm:py-3">
+                    <div className="text-xl sm:text-2xl font-bold text-white">
+                      {String(timeRemaining.minutes).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <p className="text-xs font-semibold text-white mt-1">Minutes</p>
+                </div>
+
+                {/* Seconds */}
+                <div className="flex flex-col items-center">
+                  <div className="bg-yellow-600 rounded-lg px-3 sm:px-4 py-2 sm:py-3">
+                    <div className="text-xl sm:text-2xl font-bold text-white">
+                      {String(timeRemaining.seconds).padStart(2, "0")}
+                    </div>
+                  </div>
+                  <p className="text-xs font-semibold text-white mt-1">Seconds</p>
+                </div>
+              </div>
+            )}
+            <p className="text-sm text-gray-300 mt-4">
+              until Ekatma Manav Darshan • March 25-27, 2026
+            </p>
+          </div>
+
           {/* Logos */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-8 pb-8 flex-wrap">
             <img
