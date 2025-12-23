@@ -8,7 +8,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="font-bold text-lg mb-4 text-secondary">Ekatma</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
+            <p className="text-gray-300 text-base leading-relaxed">
               International Academic Conference on Bharat's Worldview.
               Commemorating 60 years of Pandit Deendayal Upadhyaya's historic
               lectures.
