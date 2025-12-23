@@ -24,7 +24,7 @@ export default function Header() {
               <span className="font-bold text-2xl text-primary">
                 Ekatma Manav
               </span>
-              <span className="text-sm text-secondary font-semibold">
+              <span className="text-lg text-secondary font-semibold">
                 Darshan
               </span>
             </div>
