@@ -111,10 +111,10 @@ export default function CallForPapersSection() {
                     <p className="font-semibold text-foreground text-base mb-2">
                       CMT Submission Link Coming Shortly
                     </p>
-                    <p className="text-sm text-black">
+                    <p className="text-base text-black">
                       The CMT submission portal for the Ekatma Manav Darshan conference will be available soon. Please check back here or contact us for the direct submission link.
                     </p>
-                    <p className="text-sm text-muted-foreground mt-3">
+                    <p className="text-base text-muted-foreground mt-3">
                       <strong>Submission Deadline:</strong> 25 February 2026
                     </p>
                   </div>
@@ -129,7 +129,7 @@ export default function CallForPapersSection() {
               </h3>
               <div className="space-y-6">
                 <div className="bg-amber-50 p-4 rounded-md border border-amber-200">
-                  <p className="text-sm text-black leading-relaxed">
+                  <p className="text-base text-black leading-relaxed">
                     <strong className="text-foreground">Before you submit your paper:</strong> You will need to have a CMT (Conference Management Toolkit) account. If you don't already have one, create an account using the link below.
                   </p>
                 </div>
@@ -148,7 +148,7 @@ export default function CallForPapersSection() {
 
                 <div>
                   <p className="font-semibold text-foreground text-sm mb-3">Step 2: Submit Your Paper</p>
-                  <p className="text-sm text-black mb-3">
+                  <p className="text-base text-black mb-3">
                     Once you have your CMT account, follow the submission guidelines:
                   </p>
                   <a
@@ -169,7 +169,7 @@ export default function CallForPapersSection() {
               <h4 className="font-bold text-secondary mb-3 flex items-center gap-2">
                 <span className="text-xl">📜</span> Publication Opportunity
               </h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Selected papers will be published in the Journal of Indian
                 Council of Philosophical Research (JICPR), indexed in Web of
                 Science (ESCI) and Scopus.
@@ -180,7 +180,7 @@ export default function CallForPapersSection() {
               <h4 className="font-bold text-primary mb-3 flex items-center gap-2">
                 <span className="text-xl">🎓</span> Who Should Apply?
               </h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 Academicians, philosophers, economists, technologists,
                 educationists, policy experts, and researchers in Indic
                 knowledge systems. Interdisciplinary submissions encouraged.
@@ -194,7 +194,7 @@ export default function CallForPapersSection() {
               <p className="text-sm text-muted-foreground">
                 Contact: Dr. Niranjan B Poojar
               </p>
-              <p className="text-sm font-semibold text-foreground mt-2">
+              <p className="text-base font-semibold text-foreground mt-2">
                 +91 9164582650
               </p>
             </div>
@@ -211,7 +211,7 @@ export default function CallForPapersSection() {
                 <p className="font-semibold text-foreground">
                   Call for Papers
                 </p>
-                <p className="text-sm text-muted-foreground">Now Open</p>
+                <p className="text-base text-muted-foreground">Now Open</p>
               </div>
             </div>
             <div className="relative">
@@ -220,7 +220,7 @@ export default function CallForPapersSection() {
                 <p className="font-semibold text-foreground">
                   Submission Deadline
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   25 February 2026
                 </p>
               </div>
@@ -229,7 +229,7 @@ export default function CallForPapersSection() {
               <div className="absolute left-0 top-0 w-4 h-4 bg-accent rounded-full border-4 border-white -ml-2 -mt-2" />
               <div className="ml-6">
                 <p className="font-semibold text-foreground">Conference</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   25-27 March 2026
                 </p>
               </div>
