@@ -119,8 +119,79 @@ export default function AboutSection() {
           ))}
         </div>
 
+        {/* Publications & Indexing */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8">
+          <h3 className="text-2xl font-bold text-foreground mb-2">
+            Publication & Indexing
+          </h3>
+          <p className="text-muted-foreground mb-8">
+            Selected papers will be published in the Journal of Indian Council of Philosophical Research (JICPR), which is indexed in major databases and collaborated with Springer.
+          </p>
+
+          <div className="space-y-6">
+            {/* Journal Information */}
+            <div>
+              <h4 className="font-bold text-foreground mb-3">Journal: Indian Council of Philosophical Research (JICPR)</h4>
+              <p className="text-sm text-muted-foreground mb-4">
+                Published in collaboration with Springer | Official Publisher of ICPR
+              </p>
+
+              {/* Indexing Details */}
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <p className="font-semibold text-foreground mb-2">Indexed Databases</p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>✓ Web of Science (ESCI)</li>
+                    <li>✓ Scopus</li>
+                    <li>✓ Scite.ai</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <p className="font-semibold text-foreground mb-2">Impact Metrics Available On</p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>✓ Researcher</li>
+                    <li>✓ SCImago Journal Rank (SJR)</li>
+                    <li>✓ Crossref</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Publishing Partners */}
+              <div className="bg-white rounded-lg p-6 border border-blue-100">
+                <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                  {[
+                    { name: "Springer", desc: "Publisher" },
+                    { name: "Web of Science", desc: "Indexing" },
+                    { name: "Scopus", desc: "Indexing" },
+                    { name: "Scite.ai", desc: "Analytics" },
+                    { name: "SJR", desc: "Metrics" },
+                    { name: "ICPR", desc: "Organization" },
+                  ].map((partner, idx) => (
+                    <div key={idx} className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg">
+                      <div className="h-12 w-12 bg-primary-100 rounded flex items-center justify-center mb-2 text-xs font-bold text-primary">
+                        {partner.name.split(' ')[0]}
+                      </div>
+                      <p className="text-xs font-medium text-foreground">{partner.name}</p>
+                      <p className="text-xs text-muted-foreground">{partner.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Conference Proceedings */}
+            <div className="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <p className="font-semibold text-foreground mb-2">Conference Proceedings</p>
+              <p className="text-sm text-muted-foreground">
+                Abstracts of all papers will be included in the official Conference Proceedings, with full papers published in the JICPR journal.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Conference Impact */}
-        <div className="mt-16 bg-primary-50 border-l-4 border-primary rounded-lg p-8">
+        <div className="mt-8 bg-primary-50 border-l-4 border-primary rounded-lg p-8">
           <h3 className="text-xl font-bold text-primary mb-4">
             Why Attend This Conference?
           </h3>
@@ -130,8 +201,7 @@ export default function AboutSection() {
                 Get Published
               </p>
               <p className="text-sm text-muted-foreground">
-                Peer-reviewed papers published in indexed journals with global
-                reach.
+                Peer-reviewed papers published in JICPR (Springer), indexed in Web of Science & Scopus with global reach.
               </p>
             </div>
             <div>
