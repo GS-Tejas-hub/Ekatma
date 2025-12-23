@@ -45,15 +45,18 @@ export default function ImageSlider() {
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 flex items-center justify-center ${
+            className={`absolute inset-0 transition-opacity duration-1000 flex flex-col items-center justify-center ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="max-w-full max-h-full object-contain p-6"
+              className="max-w-full max-h-[85%] object-contain p-4"
             />
+            <p className="text-center text-slate-700 text-sm font-medium px-4 py-3 bg-white w-full">
+              {image.caption}
+            </p>
           </div>
         ))}
 
