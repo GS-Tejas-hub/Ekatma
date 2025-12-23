@@ -96,6 +96,170 @@ export default function CallForPapersSection() {
           </div>
         </div>
 
+        {/* Author Guidelines and Submission Guidelines */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
+            Guidelines for Authors
+          </h3>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Author Guidelines */}
+            <div className="bg-white border border-primary-200 rounded-lg p-8">
+              <h4 className="text-xl font-bold text-primary mb-6 flex items-center gap-3">
+                <span className="text-2xl">✍️</span>
+                Author Guidelines
+              </h4>
+              <div className="space-y-4">
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Author Eligibility</p>
+                  <p className="text-base text-black">
+                    Open to scholars, researchers, academicians, and intellectuals with expertise or keen interest in Indic philosophy, cultural studies, and allied disciplines.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Registration & Fees</p>
+                  <p className="text-base text-black">
+                    All authors presenting their work are required to register for the conference. Registration fees cover conference materials, meals, and participation in all sessions.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Language</p>
+                  <p className="text-base text-black">
+                    All submissions must be in English with professional academic language and clarity.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Plagiarism & Originality</p>
+                  <p className="text-base text-black">
+                    Papers must be original, unpublished work. Plagiarism detection will be performed on all submissions. Papers found to be plagiarized will be rejected.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Presentation Expectations</p>
+                  <p className="text-base text-black">
+                    Authors of accepted papers are expected to attend the conference and present their work. Presentation slots are typically 20–25 minutes followed by Q&A.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 py-2">
+                  <p className="font-semibold text-foreground text-base mb-1">Publication Rights</p>
+                  <p className="text-base text-black">
+                    By submitting, authors agree that selected papers may be published in journal or conference proceedings. Copyright terms will be specified by the publisher.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Submission Guidelines */}
+            <div className="bg-white border border-secondary-200 rounded-lg p-8">
+              <h4 className="text-xl font-bold text-secondary mb-6 flex items-center gap-3">
+                <span className="text-2xl">📝</span>
+                Paper Submission Guidelines
+              </h4>
+              <div className="space-y-4">
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    1
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Original & Unpublished Work</p>
+                    <p className="text-base text-black">
+                      Submit original and unpublished papers aligned with the conference theme. No simultaneous submissions to other conferences or journals.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    2
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Paper Length</p>
+                    <p className="text-base text-black">
+                      5,000–7,000 words, including references and appendices.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    3
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Abstract & Keywords</p>
+                    <p className="text-base text-black">
+                      Include a structured abstract (200–250 words) and 5–6 relevant keywords to aid in indexing and discovery.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    4
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Citation Style</p>
+                    <p className="text-base text-black">
+                      Follow APA (American Psychological Association) citation style for all references and in-text citations.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    5
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">File Format</p>
+                    <p className="text-base text-black">
+                      Submit in MS Word format (.doc/.docx). Font: Times New Roman or Arial, 12 pt, single-spaced with 1.5-inch margins.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    6
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Peer Review</p>
+                    <p className="text-base text-black">
+                      All papers will undergo double-blind peer review by two independent reviewers to ensure quality and academic rigor.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    7
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Author Declaration</p>
+                    <p className="text-base text-black">
+                      Include a brief author bio (50–100 words), institutional affiliation, and contact information on a separate cover page.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <span className="flex-shrink-0 w-6 h-6 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                    8
+                  </span>
+                  <div>
+                    <p className="font-semibold text-foreground text-base">Publication & Presentation</p>
+                    <p className="text-base text-black">
+                      Selected papers will be considered for publication in peer-reviewed journals and presentation at the conference.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Submission Guidelines */}
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div className="space-y-6">
