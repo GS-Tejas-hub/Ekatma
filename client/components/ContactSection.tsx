@@ -71,60 +71,6 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-gray-50 p-8 rounded-lg border border-border">
-            <h3 className="text-xl font-bold text-foreground mb-6">
-              Send us a Message
-            </h3>
-            <form className="space-y-4">
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Name <span className="text-primary">*</span>
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-primary"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Email <span className="text-primary">*</span>
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-primary"
-                  placeholder="Your email"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Subject <span className="text-primary">*</span>
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-primary"
-                  placeholder="Subject"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-foreground mb-2">
-                  Message <span className="text-primary">*</span>
-                </label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:border-primary resize-none"
-                  placeholder="Your message"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
