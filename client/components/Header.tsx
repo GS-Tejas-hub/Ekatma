@@ -1,9 +1,34 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+interface TimeRemaining {
+  days: number;
+}
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>({ days: 0 });
+
+  useEffect(() => {
+    const calculateDays = () => {
+      const conferenceDate = new Date(2026, 2, 25).getTime();
+      const now = new Date().getTime();
+      const difference = conferenceDate - now;
+
+      if (difference <= 0) {
+        setTimeRemaining({ days: 0 });
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      setTimeRemaining({ days });
+    };
+
+    calculateDays();
+    const timer = setInterval(calculateDays, 1000 * 60 * 60); // Update every hour
+    return () => clearInterval(timer);
+  }, []);
 
   const navLinks = [
     { label: "Home", href: "/" },
