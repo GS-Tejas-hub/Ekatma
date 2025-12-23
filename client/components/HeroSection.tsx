@@ -82,60 +82,6 @@ export default function HeroSection() {
             </p>
           </div>
 
-          {/* Compact Countdown Timer Below Title */}
-          <div className="bg-black bg-opacity-30 backdrop-blur-sm rounded-lg p-4 border border-white border-opacity-20 inline-block">
-            {timeRemaining.isEnded ? (
-              <p className="text-base font-semibold text-secondary">Conference is happening! 🎉</p>
-            ) : (
-              <div>
-                <div className="grid grid-cols-4 gap-2">
-                  {/* Days */}
-                  <div className="flex flex-col items-center">
-                    <div className="bg-primary rounded px-2 py-1">
-                      <div className="text-sm sm:text-base font-bold text-white">
-                        {String(timeRemaining.days).padStart(2, "0")}
-                      </div>
-                    </div>
-                    <p className="text-xs font-semibold text-white mt-1">Days</p>
-                  </div>
-
-                  {/* Hours */}
-                  <div className="flex flex-col items-center">
-                    <div className="bg-secondary rounded px-2 py-1">
-                      <div className="text-sm sm:text-base font-bold text-white">
-                        {String(timeRemaining.hours).padStart(2, "0")}
-                      </div>
-                    </div>
-                    <p className="text-xs font-semibold text-white mt-1">Hours</p>
-                  </div>
-
-                  {/* Minutes */}
-                  <div className="flex flex-col items-center">
-                    <div className="bg-accent rounded px-2 py-1">
-                      <div className="text-sm sm:text-base font-bold text-white">
-                        {String(timeRemaining.minutes).padStart(2, "0")}
-                      </div>
-                    </div>
-                    <p className="text-xs font-semibold text-white mt-1">Minutes</p>
-                  </div>
-
-                  {/* Seconds */}
-                  <div className="flex flex-col items-center">
-                    <div className="bg-yellow-600 rounded px-2 py-1">
-                      <div className="text-sm sm:text-base font-bold text-white">
-                        {String(timeRemaining.seconds).padStart(2, "0")}
-                      </div>
-                    </div>
-                    <p className="text-xs font-semibold text-white mt-1">Seconds</p>
-                  </div>
-                </div>
-                <p className="text-xs text-gray-300 mt-2">
-                  until Conference • March 25-27, 2026
-                </p>
-              </div>
-            )}
-          </div>
-
           {/* Tagline */}
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
             Commemorating 60 Years of Pandit Deendayal Upadhyaya's Historic
