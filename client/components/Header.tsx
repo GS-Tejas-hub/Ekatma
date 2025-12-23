@@ -21,10 +21,10 @@ export default function Header() {
           {/* Logo/Branding */}
           <Link to="/" className="flex items-center gap-3">
             <div className="flex flex-col">
-              <span className="font-bold text-lg text-primary">
+              <span className="font-bold text-2xl text-primary">
                 Ekatma Manav
               </span>
-              <span className="text-xs text-secondary font-semibold">
+              <span className="text-sm text-secondary font-semibold">
                 Darshan
               </span>
             </div>
