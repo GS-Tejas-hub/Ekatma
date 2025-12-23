@@ -100,26 +100,41 @@ export default function CallForPapersSection() {
         <div className="grid lg:grid-cols-2 gap-12 mb-12">
           <div className="bg-white border border-primary-200 rounded-lg p-8">
             <h3 className="text-xl font-bold text-primary mb-6">
-              Submission Guidelines
+              Submit Your Paper via CMT
             </h3>
-            <ul className="space-y-4">
-              {guidelines.map((guide, idx) => (
-                <li key={idx}>
-                  <p className="font-semibold text-foreground text-sm">
-                    {guide.label}
-                  </p>
-                  <p className="text-muted-foreground text-sm mt-1">
-                    {guide.value}
-                  </p>
-                </li>
-              ))}
-            </ul>
-            <Link
-              to="/submit-paper"
-              className="block w-full mt-8 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-center"
-            >
-              Submit Your Paper
-            </Link>
+            <div className="space-y-4 mb-6">
+              <p className="text-foreground text-sm leading-relaxed">
+                Papers should be submitted through the Microsoft Conference Management Toolkit (CMT).
+              </p>
+              <div className="bg-primary-50 p-4 rounded-md border border-primary-200">
+                <p className="font-semibold text-foreground text-sm mb-2">Before Submitting:</p>
+                <p className="text-sm text-black mb-3">
+                  You will need a CMT account to submit your paper. If you don't have one, create it here:
+                </p>
+                <a
+                  href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-4 py-2 bg-white border border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors text-center text-sm mb-3"
+                >
+                  Create CMT Account
+                </a>
+              </div>
+              <div className="bg-primary-50 p-4 rounded-md border border-primary-200">
+                <p className="font-semibold text-foreground text-sm mb-2">Submission Instructions:</p>
+                <p className="text-sm text-black mb-3">
+                  For detailed instructions on how to submit your paper to CMT, please refer to:
+                </p>
+                <a
+                  href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-4 py-2 bg-white border border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors text-center text-sm"
+                >
+                  Author Submission Guide
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-6">
