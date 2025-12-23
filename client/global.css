@@ -100,15 +100,15 @@
 
     --border: 15 10% 20%;
     --input: 15 10% 18%;
-    --ring: 348 89% 50%;
+    --ring: 30 91% 56%;
     --sidebar-background: 15 10% 10%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 348 89% 50%;
+    --sidebar-primary: 30 91% 56%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 30 84% 60%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 15 10% 20%;
-    --sidebar-ring: 348 89% 50%;
+    --sidebar-ring: 30 91% 56%;
   }
 }
 
