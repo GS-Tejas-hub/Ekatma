@@ -59,10 +59,10 @@ export default function HeroSection() {
               <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4">
                 Pandit Deendayal Upadhyaya
               </h2>
-              <p className="text-gray-100 leading-relaxed text-sm lg:text-base">
+              <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
                 Deendayal Upadhyaya was a prominent Indian thinker, philosopher, and political leader known for shaping the ideological foundation of modern Indian politics through his concept of Integral Humanism. He emphasized a development model rooted in Indian culture, ethics, and social harmony, advocating for self-reliance, decentralization, and uplifting the last person in society (Antyodaya).
               </p>
-              <p className="text-gray-100 leading-relaxed text-sm lg:text-base">
+              <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
                 A guiding force behind the Bharatiya Jana Sangh, Upadhyaya envisioned a nation that balances material progress with moral values, unity with diversity, and tradition with modernity. His ideas continue to inspire socio-political thought in India, promoting a humane and culturally grounded approach to nation-building.
               </p>
             </div>
