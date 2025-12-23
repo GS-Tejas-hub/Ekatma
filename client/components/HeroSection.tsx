@@ -72,6 +72,9 @@ export default function HeroSection() {
             <p className="text-2xl sm:text-3xl font-semibold text-secondary">
               Bharat's Worldview
             </p>
+            <p className="text-lg sm:text-xl font-semibold text-gray-100">
+              25–27 March 2026
+            </p>
           </div>
 
           {/* Tagline */}
