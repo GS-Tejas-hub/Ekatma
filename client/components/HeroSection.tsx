@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="text-center space-y-8">
           {/* Subtitle */}
           <div className="inline-block">
-            <span className="inline-block px-4 py-2 bg-secondary bg-opacity-20 border border-secondary rounded-full text-secondary font-semibold text-sm">
+            <span className="inline-block px-4 py-2 bg-secondary bg-opacity-20 border border-secondary rounded-full text-white font-semibold text-sm">
               International Academic Conference
             </span>
           </div>
