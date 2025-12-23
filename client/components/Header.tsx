@@ -63,22 +63,22 @@ export default function Header() {
           <nav className="md:hidden pb-6 border-t border-border pt-6">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.label}
-                  href={link.href}
+                  to={link.href}
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#registration"
+              <Link
+                to="/registration"
                 className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-center hover:bg-primary-700 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Register Now
-              </a>
+              </Link>
             </div>
           </nav>
         )}
