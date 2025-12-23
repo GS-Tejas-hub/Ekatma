@@ -93,7 +93,7 @@ export default function AboutSection() {
                   </span>
                   <div>
                     <p className="font-semibold text-foreground">{item.label}</p>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    <p className="text-base text-muted-foreground">{item.desc}</p>
                   </div>
                 </li>
               ))}
@@ -112,7 +112,7 @@ export default function AboutSection() {
               <h4 className="font-bold text-foreground mb-2">
                 {highlight.title}
               </h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 {highlight.description}
               </p>
             </div>
@@ -132,7 +132,7 @@ export default function AboutSection() {
             {/* Journal Information */}
             <div>
               <h4 className="font-bold text-foreground mb-3">Journal: Indian Council of Philosophical Research (JICPR)</h4>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Published in collaboration with Springer | Official Publisher of ICPR
               </p>
 
@@ -140,7 +140,7 @@ export default function AboutSection() {
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
                   <p className="font-semibold text-foreground mb-2">Indexed Databases</p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Web of Science (ESCI)</li>
                     <li>✓ Scopus</li>
                     <li>✓ Scite.ai</li>
@@ -148,7 +148,7 @@ export default function AboutSection() {
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
                   <p className="font-semibold text-foreground mb-2">Impact Metrics Available On</p>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Researcher</li>
                     <li>✓ SCImago Journal Rank (SJR)</li>
                     <li>✓ Crossref</li>
@@ -200,8 +200,8 @@ export default function AboutSection() {
                   ].map((partner, idx) => (
                     <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
                       <div className="text-3xl mb-2">{partner.icon}</div>
-                      <p className="text-sm font-bold text-foreground">{partner.name}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{partner.desc}</p>
+                      <p className="text-base font-bold text-foreground">{partner.name}</p>
+                      <p className="text-base text-muted-foreground mt-1">{partner.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -244,7 +244,7 @@ export default function AboutSection() {
               <p className="font-semibold text-foreground mb-2">
                 Reclaim Wisdom
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Engage with civilizational philosophy addressing modern crises.
               </p>
             </div>
@@ -295,7 +295,7 @@ export default function AboutSection() {
                     <h4 className="font-bold text-foreground mb-2">
                       {objective.title}
                     </h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {objective.description}
                     </p>
                   </div>
