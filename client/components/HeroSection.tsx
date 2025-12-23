@@ -33,25 +33,25 @@ export default function HeroSection() {
 
           {/* Logos */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-12 pt-8 pb-8">
-            <div className="h-40 w-40 flex items-center justify-center">
+            <div className="max-h-40 max-w-40 h-40 flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6a3f67e389ad4b11905ee7b9c7d9f83b?format=webp&width=800"
                 alt="Karnataka State Open University"
-                className="h-full w-full object-contain"
+                className="h-auto w-auto max-h-40 max-w-40 object-contain"
               />
             </div>
-            <div className="h-40 w-40 flex items-center justify-center">
+            <div className="max-h-40 max-w-56 h-40 flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Feb4ac6a98d884bfa89b0c62dbd54a0c0?format=webp&width=800"
                 alt="Prain Prava"
-                className="h-full w-full object-contain"
+                className="h-auto w-auto max-h-40 max-w-56 object-contain"
               />
             </div>
-            <div className="h-40 w-40 flex items-center justify-center">
+            <div className="max-h-40 max-w-40 h-40 flex items-center justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Faf66188fb7e04bfb803f4dd8a156b6ad?format=webp&width=800"
                 alt="Dr. Syama Prasad Mookerjee Research Foundation"
-                className="h-full w-full object-contain"
+                className="h-auto w-auto max-h-40 max-w-40 object-contain"
               />
             </div>
           </div>
