@@ -230,7 +230,7 @@ export default function AdminDashboard() {
 
         {/* Export Buttons & Search */}
         <div className="bg-white rounded-lg p-6 border border-border mb-8">
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+          <div className="flex flex-col gap-4">
             <input
               type="text"
               placeholder="Search by paper title or author name..."
@@ -238,24 +238,70 @@ export default function AdminDashboard() {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="flex-1 px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             />
-            <div className="flex gap-3">
-              <button
-                onClick={handleExportCSV}
-                disabled={submissions.length === 0}
-                className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50"
-              >
-                <Download size={18} />
-                Export CSV
-              </button>
-              <button
-                onClick={handleExportJSON}
-                disabled={submissions.length === 0}
-                className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary-600 transition-colors disabled:opacity-50"
-              >
-                <Download size={18} />
-                Export JSON
-              </button>
+
+            {/* Export & Google Drive Buttons */}
+            <div className="flex flex-col md:flex-row gap-3">
+              <div className="flex gap-3 flex-wrap">
+                <button
+                  onClick={handleExportCSV}
+                  disabled={submissions.length === 0}
+                  className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50"
+                >
+                  <Download size={18} />
+                  Export CSV
+                </button>
+                <button
+                  onClick={handleExportJSON}
+                  disabled={submissions.length === 0}
+                  className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary-600 transition-colors disabled:opacity-50"
+                >
+                  <Download size={18} />
+                  Export JSON
+                </button>
+              </div>
+
+              <div className="flex gap-3 flex-wrap md:ml-auto">
+                <button
+                  onClick={() => handleUploadToGoogleDrive("csv")}
+                  disabled={submissions.length === 0 || isUploadingGoogleDrive}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50"
+                >
+                  <Cloud size={18} />
+                  {isUploadingGoogleDrive ? "Uploading..." : "Upload CSV to Drive"}
+                </button>
+                <button
+                  onClick={() => handleUploadToGoogleDrive("json")}
+                  disabled={submissions.length === 0 || isUploadingGoogleDrive}
+                  className="flex items-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50"
+                >
+                  <Cloud size={18} />
+                  {isUploadingGoogleDrive ? "Uploading..." : "Upload JSON to Drive"}
+                </button>
+              </div>
             </div>
+
+            {/* Status Messages */}
+            {googleDriveSuccess && (
+              <div className="p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
+                <Check className="text-green-600 flex-shrink-0 mt-0.5" size={20} />
+                <div>
+                  <p className="font-semibold text-green-900">{googleDriveSuccess}</p>
+                  <p className="text-sm text-green-700 mt-1">
+                    Your data is now accessible in Google Drive!
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {googleDriveError && (
+              <div className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
+                <AlertCircle className="text-red-600 flex-shrink-0 mt-0.5" size={20} />
+                <div>
+                  <p className="font-semibold text-red-900">Upload Failed</p>
+                  <p className="text-sm text-red-700 mt-1">{googleDriveError}</p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
