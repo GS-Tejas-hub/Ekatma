@@ -9,6 +9,13 @@ import {
   handleExportJSON,
   handleDeleteSubmission,
 } from "./routes/paper-submission";
+import {
+  handleUploadCSVToGoogleDrive,
+  handleUploadJSONToGoogleDrive,
+  handleListGoogleDriveFiles,
+  handleDeleteGoogleDriveFile,
+  handleShareGoogleDriveFile,
+} from "./routes/google-drive";
 
 export function createServer() {
   const app = express();
@@ -32,6 +39,19 @@ export function createServer() {
   app.get("/api/admin/submissions/export/csv", handleExportCSV);
   app.get("/api/admin/submissions/export/json", handleExportJSON);
   app.delete("/api/admin/submissions/:id", handleDeleteSubmission);
+
+  // Google Drive routes
+  app.post("/api/admin/google-drive/upload-csv", handleUploadCSVToGoogleDrive);
+  app.post(
+    "/api/admin/google-drive/upload-json",
+    handleUploadJSONToGoogleDrive
+  );
+  app.get("/api/admin/google-drive/files", handleListGoogleDriveFiles);
+  app.delete("/api/admin/google-drive/files/:fileId", handleDeleteGoogleDriveFile);
+  app.post(
+    "/api/admin/google-drive/share/:fileId",
+    handleShareGoogleDriveFile
+  );
 
   return app;
 }
