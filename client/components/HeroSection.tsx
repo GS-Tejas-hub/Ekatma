@@ -39,17 +39,15 @@ export default function HeroSection() {
               className="h-40 w-auto object-contain"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Feb4ac6a98d884bfa89b0c62dbd54a0c0?format=webp&width=800"
-              alt="Prain Prava"
+              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F8507eab6c65644c2a604cd0b74a430f4?format=webp&width=800"
+              alt="Prajna Pravah"
               className="h-40 w-auto object-contain"
             />
-            <div className="h-48 max-w-36 overflow-hidden flex items-center justify-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Faf66188fb7e04bfb803f4dd8a156b6ad?format=webp&width=800"
-                alt="Dr. Syama Prasad Mookerjee Research Foundation"
-                className="h-48 w-auto object-contain"
-              />
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F3e8fc7d1d60b45749080e75fe1250b65?format=webp&width=800"
+              alt="Dr. Syama Prasad Mookerjee Research Foundation"
+              className="h-40 w-auto object-contain"
+            />
           </div>
 
           {/* Conference Details */}
