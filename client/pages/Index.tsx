@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import CountdownTimer from "@/components/CountdownTimer";
 import ImportantDatesBanner from "@/components/ImportantDatesBanner";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -13,7 +12,6 @@ export default function Index() {
     <div className="min-h-screen bg-white">
       <ImportantDatesBanner />
       <Header />
-      <CountdownTimer />
       <HeroSection />
       <AboutSection />
       <ImportantDatesSection />
