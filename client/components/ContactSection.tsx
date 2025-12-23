@@ -65,7 +65,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-black font-semibold mb-1">Dates</p>
-                  <p className="text-black">25-27 March 2025</p>
+                  <p className="text-black">25-27 March 2026</p>
                 </div>
               </div>
             </div>

@@ -89,7 +89,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
                 <p className="font-medium text-white">Dates</p>
-                <p>March 25-27, 2025</p>
+                <p>March 25-27, 2026</p>
               </li>
               <li>
                 <p className="font-medium text-white">Venue</p>

@@ -203,7 +203,7 @@ export default function CallForPapersSection() {
               <div className="ml-6">
                 <p className="font-semibold text-foreground">Conference</p>
                 <p className="text-sm text-muted-foreground">
-                  25-27 March 2025
+                  25-27 March 2026
                 </p>
               </div>
             </div>
