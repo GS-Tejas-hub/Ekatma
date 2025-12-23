@@ -52,6 +52,9 @@ export default function HeroSection() {
             />
           </div>
 
+          {/* Image Slider */}
+          <ImageSlider />
+
           {/* Conference Details */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto pt-4">
             <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-lg p-4 border border-white border-opacity-20">
