@@ -164,7 +164,7 @@ export default function AboutSection() {
                     {
                       name: "Springer",
                       desc: "Publisher",
-                      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Springer_logo.svg"
+                      logo: "https://www.springer.com/assets/img/logo-9ecbca87b34dd4d55e0db0826e5cb10e.png"
                     },
                     {
                       name: "Web of Science",
@@ -174,22 +174,22 @@ export default function AboutSection() {
                     {
                       name: "Scopus",
                       desc: "Indexing",
-                      logo: "https://upload.wikimedia.org/wikipedia/commons/6/63/Scopus_logo.svg"
+                      logo: "https://www.elsevier.com/__data/assets/image_asset/0010/277387/scopus-logo-1.png"
                     },
                     {
                       name: "Scite.ai",
                       desc: "Analytics",
-                      logo: "https://scite.ai/static/logo.png"
+                      logo: "https://scite.ai/images/scite-logo-dark.png"
                     },
                     {
                       name: "SJR",
                       desc: "Metrics",
-                      logo: "https://www.scimagojr.com/logo.png"
+                      logo: "https://www.scimagojr.com/assets/img/logo-1.png"
                     },
                     {
                       name: "ICPR",
                       desc: "Organization",
-                      logo: "https://via.placeholder.com/120x80?text=ICPR"
+                      logo: "https://via.placeholder.com/120x80?text=ICPR&fontsize=12"
                     },
                   ].map((partner, idx) => (
                     <div key={idx} className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
