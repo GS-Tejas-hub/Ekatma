@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Download, Eye, Trash2 } from "lucide-react";
+import { Download, Eye, Trash2, Cloud, Check, AlertCircle } from "lucide-react";
 
 interface Author {
   id: string;
