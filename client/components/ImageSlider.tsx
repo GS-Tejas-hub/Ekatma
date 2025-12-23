@@ -35,8 +35,8 @@ export default function ImageSlider() {
   }, []);
 
   return (
-    <div className="w-full max-w-5xl mx-auto pt-8 pb-8 px-4">
-      <div className="relative overflow-hidden rounded-lg shadow-2xl bg-white w-full" style={{ minHeight: "600px" }}>
+    <div className="w-full max-w-lg mx-auto pt-8 pb-8 px-4">
+      <div className="relative overflow-hidden rounded-lg shadow-2xl bg-white w-full" style={{ height: "700px" }}>
         {images.map((image, index) => (
           <div
             key={index}
