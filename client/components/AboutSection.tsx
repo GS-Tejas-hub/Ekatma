@@ -159,50 +159,49 @@ export default function AboutSection() {
               {/* Publishing Partners */}
               <div className="bg-white rounded-lg p-6 border border-blue-100">
                 <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 items-center">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                   {[
                     {
                       name: "Springer",
                       desc: "Publisher",
-                      logo: "https://www.springer.com/assets/img/logo-9ecbca87b34dd4d55e0db0826e5cb10e.png"
+                      icon: "📚",
+                      color: "bg-red-50"
                     },
                     {
                       name: "Web of Science",
                       desc: "Indexing",
-                      logo: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Web_of_Science_Logo_12.2023.svg"
+                      icon: "🔬",
+                      color: "bg-blue-50"
                     },
                     {
                       name: "Scopus",
                       desc: "Indexing",
-                      logo: "https://www.elsevier.com/__data/assets/image_asset/0010/277387/scopus-logo-1.png"
+                      icon: "🔍",
+                      color: "bg-orange-50"
                     },
                     {
                       name: "Scite.ai",
                       desc: "Analytics",
-                      logo: "https://scite.ai/images/scite-logo-dark.png"
+                      icon: "📊",
+                      color: "bg-green-50"
                     },
                     {
                       name: "SJR",
                       desc: "Metrics",
-                      logo: "https://www.scimagojr.com/assets/img/logo-1.png"
+                      icon: "📈",
+                      color: "bg-purple-50"
                     },
                     {
                       name: "ICPR",
                       desc: "Organization",
-                      logo: "https://via.placeholder.com/120x80?text=ICPR&fontsize=12"
+                      icon: "🏛️",
+                      color: "bg-indigo-50"
                     },
                   ].map((partner, idx) => (
-                    <div key={idx} className="flex flex-col items-center text-center p-3 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
-                      <img
-                        src={partner.logo}
-                        alt={partner.name}
-                        className="h-12 w-auto object-contain mb-2"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                        }}
-                      />
-                      <p className="text-xs font-medium text-foreground">{partner.name}</p>
-                      <p className="text-xs text-muted-foreground">{partner.desc}</p>
+                    <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
+                      <div className="text-3xl mb-2">{partner.icon}</div>
+                      <p className="text-sm font-bold text-foreground">{partner.name}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{partner.desc}</p>
                     </div>
                   ))}
                 </div>
