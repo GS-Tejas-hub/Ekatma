@@ -59,9 +59,14 @@ export default function ImageSlider() {
               alt={image.alt}
               className="max-w-full max-h-[85%] object-contain p-4"
             />
-            <p className="text-center text-slate-700 text-sm font-medium px-4 py-3 bg-white w-full">
-              {image.caption}
-            </p>
+            <div className="text-center text-slate-700 px-4 py-4 bg-white w-full">
+              <p className="text-base font-semibold mb-2">
+                {image.caption}
+              </p>
+              <p className="text-xs text-slate-500">
+                Source: {image.source}
+              </p>
+            </div>
           </div>
         ))}
 
