@@ -70,8 +70,9 @@ export default function Header() {
 
             {/* Days Countdown */}
             <div className="flex flex-col items-center gap-0 px-4 py-2 bg-primary-50 rounded-lg border border-primary-200">
-              <p className="text-xs font-bold text-primary">Days Left</p>
-              <p className="text-xl font-bold text-primary">{timeRemaining.days}</p>
+              <p className="text-xs font-bold text-primary">Days left for</p>
+              <p className="text-xs font-bold text-primary">conference</p>
+              <p className="text-2xl font-bold text-primary mt-1">{timeRemaining.days}</p>
             </div>
 
             <Link
