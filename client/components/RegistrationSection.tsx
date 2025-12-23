@@ -120,11 +120,7 @@ export default function RegistrationSection() {
                 {/* CTA Button */}
                 <button
                   onClick={() => handleRegister(tier.id)}
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-                    tier.popular
-                      ? "bg-primary text-white hover:bg-primary-700"
-                      : "bg-muted text-foreground hover:bg-muted-foreground/10 border border-border"
-                  }`}
+                  className="w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 bg-muted text-foreground hover:bg-muted-foreground/10 border border-border"
                 >
                   {tier.cta}
                 </button>
