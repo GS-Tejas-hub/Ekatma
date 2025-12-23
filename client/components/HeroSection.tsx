@@ -1,14 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageSlider from "./ImageSlider";
 
-interface TimeRemaining {
-  days: number;
-  hours: number;
-  minutes: number;
-  seconds: number;
-  isEnded: boolean;
-}
-
 export default function HeroSection() {
   const [timeRemaining, setTimeRemaining] = useState<TimeRemaining>({
     days: 0,
