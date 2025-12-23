@@ -13,7 +13,7 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Information */}
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Details */}
           <div className="space-y-8">
             <div>
