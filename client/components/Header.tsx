@@ -44,6 +44,7 @@ export default function Header() {
             ))}
             <Link
               to="/registration"
+              onClick={() => window.scrollTo(0, 0)}
               className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary-700 transition-colors"
             >
               Register Now
