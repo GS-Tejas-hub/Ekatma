@@ -65,7 +65,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main Title */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
               Ekatma Manav Darshan
             </h1>
