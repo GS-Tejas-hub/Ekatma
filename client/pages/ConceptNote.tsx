@@ -28,7 +28,7 @@ export default function ConceptNote() {
             {/* Introduction */}
             <section>
               <h3 className="text-2xl font-bold text-foreground mb-4">Introduction: Revisiting a Civilizational Vision</h3>
-              <p>
+              <p className="text-justify">
                 Sixty years ago, when ideological polarities held the world captive, Pandit Deendayal Upadhyaya articulated a distinctly civilizational framework Ekatma Manav Darshan, the Darshan of the Integrated Universe. Delivered in 1965, these historic lectures were not an imitation of Western theories but a retrieval of Bharat's philosophical continuity. Ekatma Manav Darshan is neither a political ideology nor a sociological model but a Darshan, a metaphysical worldview rooted in Rta, the cosmic order. It rests upon the principle that the human being is Ekatma an indivisible unity of Sharira (body), Manas (mind), Buddhi (intellect), and Atma (soul) and that society and the cosmos must be organized so that this integral evolution can unfold harmoniously. This concept note situates Ekatma Manav Darshan within contemporary global crises, reaffirming its philosophical depth and universal relevance.
               </p>
             </section>
