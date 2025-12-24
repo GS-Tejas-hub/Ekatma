@@ -41,11 +41,14 @@ export default function HostInstitution() {
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Partner Organizations
               </h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-bold text-primary mb-3">Prajna Pravah</h3>
+                  <p className="text-base text-black leading-relaxed mb-3">
+                    Prajna Pravah is a global intellectual movement, not merely a forum, committed to the resurgence of Bharatiya civilizational consciousness and Indic knowledge. It serves as an interconnected network of thinkers, academicians, policy scholars, think tanks, intellectual forums, and organizations across India and abroad.
+                  </p>
                   <p className="text-base text-black leading-relaxed">
-                    A knowledge organization dedicated to building civilizational narratives and fostering intellectual discourse on Indic thought and values.
+                    United by the vision of Loka Kalyana (universal well-being), Prajna Pravah facilitates dialogue, research, and action in the fields of philosophy, education, culture, governance, and society. By fostering decolonized, Dharma-centered perspectives, it works toward intellectual self-reliance and holistic nation-building rooted in timeless Indic wisdom.
                   </p>
                 </div>
                 <div>
