@@ -51,10 +51,10 @@ export default function HostInstitution() {
               Conference Venue
             </h2>
             <p className="text-base text-black leading-relaxed mb-4">
-              The conference will be held at Karnataka State Open University, providing state-of-the-art facilities and a conducive academic environment for scholars and researchers from around the world.
+              The conference will be held at Karnataka State Open University in Mysore, providing state-of-the-art facilities and a conducive academic environment for scholars and researchers from around the world.
             </p>
             <p className="text-base text-muted-foreground">
-              Venue details and accommodation information will be provided to registered participants.
+              Mysore is a historic city renowned for its cultural heritage and hospitality. Venue details and accommodation information will be provided to registered participants.
             </p>
           </section>
         </div>
