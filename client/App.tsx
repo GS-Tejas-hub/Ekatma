@@ -12,6 +12,14 @@ import Contact from "./pages/Contact";
 import SubmitPaper from "./pages/SubmitPaper";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
+import ConceptNote from "./pages/ConceptNote";
+import HostInstitution from "./pages/HostInstitution";
+import KnowledgePartners from "./pages/KnowledgePartners";
+import ReceptionCommittee from "./pages/ReceptionCommittee";
+import OrganisingCommittee from "./pages/OrganisingCommittee";
+import Speakers from "./pages/Speakers";
+import ProgrammeSchedule from "./pages/ProgrammeSchedule";
+import VenueTravel from "./pages/VenueTravel";
 
 const queryClient = new QueryClient();
 
