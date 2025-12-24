@@ -32,10 +32,18 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "/" },
+    { label: "Concept Note", href: "/concept-note" },
+    { label: "Host Institution", href: "/host-institution" },
+    { label: "Knowledge Partners", href: "/knowledge-partners" },
     { label: "Call for Papers", href: "/call-for-papers" },
+    { label: "Reception Committee", href: "/reception-committee" },
+    { label: "Organising Committee", href: "/organising-committee" },
     { label: "Important Dates", href: "/important-dates" },
     { label: "Registration", href: "/registration" },
-    { label: "Contact", href: "/contact" },
+    { label: "Speakers", href: "/speakers" },
+    { label: "Programme Schedule", href: "/programme-schedule" },
+    { label: "Venue & Travel", href: "/venue-travel" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
