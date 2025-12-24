@@ -21,15 +21,20 @@ export default function HostInstitution() {
 
           <div className="space-y-12">
             <section className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-8 border border-primary-200">
-              <h2 className="text-2xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl font-bold text-foreground mb-6">
                 Karnataka State Open University
               </h2>
-              <p className="text-base text-black leading-relaxed mb-4">
-                Karnataka State Open University (KSOU), established in 1996, is a premier distance education institution in India. KSOU is committed to providing quality education and fostering academic excellence across diverse disciplines.
-              </p>
-              <p className="text-base text-black leading-relaxed">
-                As the host institution for the Ekatma Manav Darshan Conference, KSOU brings its expertise in academic governance, international collaboration, and institutional excellence to create a world-class conference experience.
-              </p>
+              <div className="space-y-4">
+                <p className="text-base text-black leading-relaxed">
+                  Karnataka State Open University (KSOU), Mysuru, is a premier institution committed to inclusive and flexible higher education through open and distance learning. Established in 1996, KSOU serves diverse learners including working professionals, rural students, and lifelong learners.
+                </p>
+                <p className="text-base text-black leading-relaxed">
+                  The University offers a wide range of undergraduate, postgraduate, diploma, and certificate programmes across humanities, social sciences, commerce, management, science, and technology. Accredited with NAAC A+, KSOU upholds high academic standards, promotes research and innovation, and leverages digital platforms to democratize education and strengthen India's knowledge ecosystem.
+                </p>
+                <p className="text-base text-black leading-relaxed">
+                  As the host institution for the Ekatma Manav Darshan Conference, KSOU brings its expertise in academic governance, international collaboration, and institutional excellence to create a world-class conference experience that celebrates civilizational philosophy and contemporary scholarly discourse.
+                </p>
+              </div>
             </section>
 
             <section className="bg-white border border-border rounded-lg p-8">
