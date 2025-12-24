@@ -32,9 +32,17 @@ export const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/concept-note" element={<ConceptNote />} />
+          <Route path="/host-institution" element={<HostInstitution />} />
+          <Route path="/knowledge-partners" element={<KnowledgePartners />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
+          <Route path="/reception-committee" element={<ReceptionCommittee />} />
+          <Route path="/organising-committee" element={<OrganisingCommittee />} />
           <Route path="/important-dates" element={<ImportantDates />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/speakers" element={<Speakers />} />
+          <Route path="/programme-schedule" element={<ProgrammeSchedule />} />
+          <Route path="/venue-travel" element={<VenueTravel />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/submit-paper" element={<SubmitPaper />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
