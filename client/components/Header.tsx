@@ -49,46 +49,19 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo/Branding */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="flex flex-col">
-              <span className="font-bold text-2xl text-primary">
-                Ekatma Manav
-              </span>
-              <span className="font-bold text-2xl text-secondary">
-                Darshan
-              </span>
-            </div>
-          </Link>
-
+        <div className="flex items-center justify-between md:justify-center h-auto py-4">
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-3 flex-wrap justify-center">
+          <nav className="hidden md:flex items-center gap-6 flex-wrap justify-center">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.href}
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap"
+                className="text-base font-semibold text-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap"
               >
                 {link.label}
               </Link>
             ))}
-
-            {/* Days Countdown */}
-            <div className="flex flex-col items-center gap-0 px-4 py-2 bg-primary-50 rounded-lg border border-primary-200">
-              <p className="text-xs font-bold text-primary">Days left for</p>
-              <p className="text-xs font-bold text-primary">conference</p>
-              <p className="text-2xl font-bold text-primary mt-1">{timeRemaining.days}</p>
-            </div>
-
-            <Link
-              to="/registration"
-              onClick={() => window.scrollTo(0, 0)}
-              className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary-700 transition-colors"
-            >
-              Register Now
-            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -118,16 +91,6 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                to="/registration"
-                className="px-6 py-2 bg-primary text-primary-foreground rounded-lg font-medium text-center hover:bg-primary-700 transition-colors"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  window.scrollTo(0, 0);
-                }}
-              >
-                Register Now
-              </Link>
             </div>
           </nav>
         )}
