@@ -29,7 +29,7 @@ export default function VenueTravel() {
               <div>
                 <p className="font-bold text-foreground mb-2">Location</p>
                 <p className="text-base text-black">
-                  Belgaum (Belagavi), Karnataka, India
+                  Mysore, Karnataka, India
                 </p>
               </div>
               <div>
@@ -44,29 +44,29 @@ export default function VenueTravel() {
           {/* Getting There Section */}
           <section className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-8 border border-primary-200">
             <h2 className="text-2xl font-bold text-foreground mb-6">
-              Getting to Belgaum
+              Getting to Mysore
             </h2>
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-primary mb-3">✈️ By Air</h3>
                 <p className="text-base text-black mb-3">
-                  The nearest major airport is Belgaum Airport. Alternatively, international flights operate from:
+                  The nearest major airports are:
                 </p>
                 <ul className="text-base text-black space-y-2">
-                  <li>• Bangalore International Airport (BLR) - ~250 km away</li>
-                  <li>• Hyderabad International Airport (HYD) - ~400 km away</li>
+                  <li>• Bangalore International Airport (BLR) - ~240 km away (3–4 hours by road)</li>
+                  <li>• Mysore Airport (MYQ) - For select domestic flights</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-primary mb-3">🚂 By Train</h3>
                 <p className="text-base text-black">
-                  Belgaum Railway Station is well-connected to major Indian cities including Bangalore, Pune, and Hyderabad with regular express and passenger trains.
+                  Mysore Junction Railway Station is well-connected to major Indian cities including Bangalore, Chennai, and Hyderabad with regular express and passenger trains. Journey time from Bangalore is approximately 2.5 hours.
                 </p>
               </div>
               <div>
                 <h3 className="text-lg font-bold text-primary mb-3">🚗 By Road</h3>
                 <p className="text-base text-black">
-                  Belgaum is accessible via National Highways and is well-connected by bus services from neighboring states. Taxis and car rentals are available for local travel.
+                  Mysore is easily accessible via National Highways (NH-44) and is well-connected by bus services from neighboring states. Taxis and car rentals are available for local travel. Bangalore to Mysore is a scenic 240 km drive.
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function VenueTravel() {
               Accommodation
             </h2>
             <p className="text-base text-black leading-relaxed mb-6">
-              Belgaum offers a range of accommodation options for conference participants, from budget hotels to premium resorts. The Reception Committee can provide recommendations and assistance with bookings.
+              Mysore offers a wide range of accommodation options for conference participants, from budget hotels to premium resorts. The city is a popular tourist destination with excellent hospitality services. The Reception Committee can provide recommendations and assistance with bookings.
             </p>
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
               <p className="font-semibold text-foreground mb-2">Accommodation Support</p>
