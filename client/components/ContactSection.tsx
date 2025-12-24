@@ -13,63 +13,83 @@ export default function ContactSection() {
         </div>
 
         {/* Contact Information */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-white border border-primary-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-primary mb-4">
                 Conference Coordinator
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="text-base text-black font-semibold mb-1">Name</p>
-                  <p className="text-black">Dr. Niranjan B Poojar</p>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Name</p>
+                  <p className="text-base font-semibold text-foreground">Dr. Punith Raj K N</p>
                 </div>
                 <div>
-                  <p className="text-base text-black font-semibold mb-1">Phone</p>
-                  <p className="text-black">
-                    <a href="tel:+919164582650" className="text-primary hover:underline">
-                      +91 9164582650
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Phone</p>
+                  <p className="text-base text-black">
+                    <a href="tel:+919845537663" className="text-primary font-semibold hover:underline">
+                      +91 98455 37663
                     </a>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                Paper Submissions
+            <div className="bg-white border border-secondary-200 rounded-lg p-6">
+              <h3 className="text-xl font-bold text-secondary mb-4">
+                Paper Submissions Coordinator
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="text-sm text-black font-semibold mb-1">Submission Method</p>
-                  <p className="text-black">
-                    Microsoft Conference Management Toolkit (CMT)
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Name</p>
+                  <p className="text-base font-semibold text-foreground">Dr. Niranjan B Poojar</p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Phone</p>
+                  <p className="text-base text-black">
+                    <a href="tel:+919164582650" className="text-primary font-semibold hover:underline">
+                      +91 9164582650
+                    </a>
                   </p>
-                </div>
-                <div>
-                  <p className="text-sm text-black font-semibold mb-1">Deadline</p>
-                  <p className="text-black">25 February 2026</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-bold text-foreground mb-4">
-                Conference Details
-              </h3>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-sm text-black font-semibold mb-1">Location</p>
-                  <p className="text-black">Mysore, India</p>
-                </div>
-                <div>
-                  <p className="text-sm text-black font-semibold mb-1">Dates</p>
-                  <p className="text-black">25-27 March 2026</p>
                 </div>
               </div>
             </div>
           </div>
+
+            <div className="bg-gradient-to-r from-primary-50 to-secondary-50 border border-primary-200 rounded-lg p-6 mb-12">
+              <h3 className="text-xl font-bold text-foreground mb-4">
+                Paper Submissions
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Submission Method</p>
+                  <p className="text-base text-black">
+                    Microsoft Conference Management Toolkit (CMT)
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Deadline</p>
+                  <p className="text-base text-black font-semibold">25 February 2026</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-border rounded-lg p-6">
+              <h3 className="text-xl font-bold text-foreground mb-4">
+                Conference Details
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Location</p>
+                  <p className="text-base text-black">Mysore, Karnataka, India</p>
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground font-semibold mb-1">Dates</p>
+                  <p className="text-base text-black">25–27 March 2026</p>
+                </div>
+              </div>
+            </div>
 
         </div>
 
