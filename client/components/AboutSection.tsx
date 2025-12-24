@@ -176,7 +176,7 @@ export default function AboutSection() {
                     {
                       name: "Scopus",
                       desc: "Indexing",
-                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F1ab40c2a0a09493d9896c31cdf1eabad?format=webp&width=800",
+                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6c5171089c4849e0be27a5f907e9a41e?format=webp&width=800",
                       color: "bg-orange-50"
                     },
                     {
