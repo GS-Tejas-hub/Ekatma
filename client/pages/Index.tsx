@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import ImportantDatesBanner from "@/components/ImportantDatesBanner";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
 export default function Index() {
@@ -9,6 +10,7 @@ export default function Index() {
       <ImportantDatesBanner />
       <Header />
       <HeroSection />
+      <AboutSection />
       <Footer />
     </div>
   );
