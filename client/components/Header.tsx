@@ -27,6 +27,17 @@ export default function Header() {
     <header className={`sticky top-0 z-50 border-b shadow-sm transition-colors duration-200 ${
       isHome ? "bg-white border-border" : "bg-primary text-white border-primary-700"
     }`}>
+      {/* Tagline Section */}
+      <div className={`text-center py-2 px-4 transition-colors duration-200 ${
+        isHome ? "bg-primary-50 border-b border-border" : "bg-primary-600 border-b border-primary-700"
+      }`}>
+        <p className={`text-xs md:text-sm font-semibold tracking-wide ${
+          isHome ? "text-primary" : "text-white"
+        }`}>
+          International Academic Conference • Ekatma Manav Darshan • Bharat's Worldview • 25–27 March 2026
+        </p>
+      </div>
+
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center h-auto py-4">
           {/* Desktop Navigation */}
