@@ -408,6 +408,105 @@ export default function CallForPapersSection() {
           </p>
         </div>
 
+        {/* Publication & Indexing */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-8">
+          <h3 className="text-2xl font-bold text-foreground mb-2">
+            Publication & Indexing
+          </h3>
+          <p className="text-muted-foreground mb-8">
+            Selected papers will be published in the Journal of Indian Council of Philosophical Research (JICPR), which is indexed in major databases and collaborated with Springer.
+          </p>
+
+          <div className="space-y-6">
+            {/* Journal Information */}
+            <div>
+              <h4 className="font-bold text-foreground mb-3">Journal: Indian Council of Philosophical Research (JICPR)</h4>
+              <p className="text-base text-muted-foreground mb-4">
+                Published in collaboration with Springer | Official Publisher of ICPR
+              </p>
+
+              {/* Indexing Details */}
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <p className="font-semibold text-foreground mb-2">Indexed Databases</p>
+                  <ul className="space-y-2 text-base text-muted-foreground">
+                    <li>✓ Web of Science (ESCI)</li>
+                    <li>✓ Scopus</li>
+                    <li>✓ Scite.ai</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-blue-100">
+                  <p className="font-semibold text-foreground mb-2">Impact Metrics Available On</p>
+                  <ul className="space-y-2 text-base text-muted-foreground">
+                    <li>✓ Researcher</li>
+                    <li>✓ SCImago Journal Rank (SJR)</li>
+                    <li>✓ Crossref</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Publishing Partners */}
+              <div className="bg-white rounded-lg p-6 border border-blue-100">
+                <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                  {[
+                    {
+                      name: "Springer",
+                      desc: "Publisher",
+                      icon: "📚",
+                      color: "bg-red-50"
+                    },
+                    {
+                      name: "Web of Science",
+                      desc: "Indexing",
+                      icon: "🔬",
+                      color: "bg-blue-50"
+                    },
+                    {
+                      name: "Scopus",
+                      desc: "Indexing",
+                      icon: "🔍",
+                      color: "bg-orange-50"
+                    },
+                    {
+                      name: "Scite.ai",
+                      desc: "Analytics",
+                      icon: "📊",
+                      color: "bg-green-50"
+                    },
+                    {
+                      name: "SJR",
+                      desc: "Metrics",
+                      icon: "📈",
+                      color: "bg-purple-50"
+                    },
+                    {
+                      name: "ICPR",
+                      desc: "Organization",
+                      icon: "🏛️",
+                      color: "bg-indigo-50"
+                    },
+                  ].map((partner, idx) => (
+                    <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
+                      <div className="text-3xl mb-2">{partner.icon}</div>
+                      <p className="text-base font-bold text-foreground">{partner.name}</p>
+                      <p className="text-base text-muted-foreground mt-1">{partner.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Conference Proceedings */}
+            <div className="bg-white rounded-lg p-4 border-l-4 border-primary">
+              <p className="font-semibold text-foreground mb-2">Conference Proceedings</p>
+              <p className="text-sm text-muted-foreground">
+                Abstracts of all papers will be included in the official Conference Proceedings, with full papers published in the JICPR journal.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="mt-16 pt-16 border-t border-border text-center">
           <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Submit?</h3>
