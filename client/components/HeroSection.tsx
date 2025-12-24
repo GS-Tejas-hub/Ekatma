@@ -30,7 +30,7 @@ export default function HeroSection() {
 
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
       );
       const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
@@ -113,10 +113,21 @@ export default function HeroSection() {
                 Pandit Deendayal Upadhyaya
               </h2>
               <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
-                Deendayal Upadhyaya was a prominent Indian thinker, philosopher, and political leader known for shaping the ideological foundation of modern Indian politics through his concept of Integral Humanism. He emphasized a development model rooted in Indian culture, ethics, and social harmony, advocating for self-reliance, decentralization, and uplifting the last person in society (Antyodaya).
+                Deendayal Upadhyaya was a prominent Indian thinker, philosopher,
+                and political leader known for shaping the ideological
+                foundation of modern Indian politics through his concept of
+                Integral Humanism. He emphasized a development model rooted in
+                Indian culture, ethics, and social harmony, advocating for
+                self-reliance, decentralization, and uplifting the last person
+                in society (Antyodaya).
               </p>
               <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
-                A guiding force behind the Bharatiya Jana Sangh, Upadhyaya envisioned a nation that balances material progress with moral values, unity with diversity, and tradition with modernity. His ideas continue to inspire socio-political thought in India, promoting a humane and culturally grounded approach to nation-building.
+                A guiding force behind the Bharatiya Jana Sangh, Upadhyaya
+                envisioned a nation that balances material progress with moral
+                values, unity with diversity, and tradition with modernity. His
+                ideas continue to inspire socio-political thought in India,
+                promoting a humane and culturally grounded approach to
+                nation-building.
               </p>
             </div>
 
