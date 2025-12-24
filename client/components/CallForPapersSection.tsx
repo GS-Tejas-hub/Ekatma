@@ -404,8 +404,7 @@ export default function CallForPapersSection() {
         {/* CMT Acknowledgment */}
         <div className="mt-16 p-6 bg-gray-50 border border-border rounded-lg text-center">
           <p className="text-sm text-black">
-            <strong>The Microsoft CMT service was used for managing the peer-reviewing process for this conference.</strong><br/>
-            This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
         </div>
       </div>
