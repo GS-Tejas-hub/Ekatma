@@ -8,8 +8,8 @@ export default function OrganisingCommittee() {
     <div className="min-h-screen bg-white">
       <ImportantDatesBanner />
       <Header />
-      <div className="pt-20">
-        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div className="pt-8">
+        <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Organising Committee

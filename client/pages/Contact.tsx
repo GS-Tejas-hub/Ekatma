@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="min-h-screen bg-white">
       <ImportantDatesBanner />
       <Header />
-      <div className="pt-20">
+      <div className="pt-8">
         <ContactSection />
       </div>
       <Footer />

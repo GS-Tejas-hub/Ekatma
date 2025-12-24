@@ -8,7 +8,7 @@ export default function CallForPapers() {
     <div className="min-h-screen bg-white">
       <ImportantDatesBanner />
       <Header />
-      <div className="pt-20">
+      <div className="pt-8">
         <CallForPapersSection />
       </div>
       <Footer />
