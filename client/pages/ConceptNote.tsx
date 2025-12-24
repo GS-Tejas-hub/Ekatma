@@ -11,7 +11,7 @@ export default function ConceptNote() {
       <div className="pt-8">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
           {/* Title Section */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
               Concept Note
             </h1>
