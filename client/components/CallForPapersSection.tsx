@@ -407,6 +407,28 @@ export default function CallForPapersSection() {
             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
           </p>
         </div>
+
+        {/* CTA Section */}
+        <div className="mt-16 pt-16 border-t border-border text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Submit?</h3>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Join us at the Ekatma Manav Darshan conference and contribute to the discourse on Bharat's worldview.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#registration"
+              className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
+            >
+              Register Now
+            </a>
+            <a
+              href="/important-dates"
+              className="px-8 py-3 bg-white border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors"
+            >
+              View Important Dates
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
