@@ -453,19 +453,19 @@ export default function CallForPapersSection() {
                     {
                       name: "Springer",
                       desc: "Publisher",
-                      icon: "📚",
+                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F7575921c00be4946a339af580a542d48?format=webp&width=800",
                       color: "bg-red-50"
                     },
                     {
                       name: "Web of Science",
                       desc: "Indexing",
-                      icon: "🔬",
+                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Ffe460099db574780a5917d51ad4e6183?format=webp&width=800",
                       color: "bg-blue-50"
                     },
                     {
                       name: "Scopus",
                       desc: "Indexing",
-                      icon: "🔍",
+                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F1ab40c2a0a09493d9896c31cdf1eabad?format=webp&width=800",
                       color: "bg-orange-50"
                     },
                     {
@@ -488,7 +488,11 @@ export default function CallForPapersSection() {
                     },
                   ].map((partner, idx) => (
                     <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
-                      <div className="text-3xl mb-2">{partner.icon}</div>
+                      {partner.logo ? (
+                        <img src={partner.logo} alt={partner.name} className="h-12 mb-2 object-contain" />
+                      ) : (
+                        <div className="text-3xl mb-2">{partner.icon}</div>
+                      )}
                       <p className="text-base font-bold text-foreground">{partner.name}</p>
                       <p className="text-base text-muted-foreground mt-1">{partner.desc}</p>
                     </div>
