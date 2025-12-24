@@ -65,7 +65,7 @@ export default function RegistrationSection() {
   };
 
   return (
-    <section id="registration" className="py-16 md:py-24 bg-white">
+    <section id="registration" className="py-8 md:py-12 bg-white">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
