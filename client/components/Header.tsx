@@ -63,13 +63,13 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-3 flex-wrap justify-center">
             {navLinks.map((link) => (
               <Link
                 key={link.label}
                 to={link.href}
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-base font-bold text-foreground hover:text-primary transition-colors duration-200"
+                className="text-sm font-semibold text-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap"
               >
                 {link.label}
               </Link>
