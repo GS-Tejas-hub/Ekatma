@@ -174,20 +174,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Philosophy Statement */}
-        <div className="mt-12 bg-gradient-to-r from-primary-900 to-slate-900 rounded-lg p-6 border border-primary-700">
-          <p className="text-base italic text-gray-200 leading-relaxed">
-            "Ekatma Manav Darshan proposes a vision for restoring social harmony
-            through Dharma—the ethical principle that sustains equilibrium in
-            individual, social, ecological, and cosmic dimensions. Society is
-            held not by the assertion of rights but by Kartavya: the mutual
-            duties that arise from recognition of shared existence."
-          </p>
-          <p className="text-base text-gray-400 mt-3">
-            — Pandit Deendayal Upadhyaya
-          </p>
-        </div>
-
         {/* CMT Acknowledgement */}
         <div className="mt-12 p-6 bg-gray-800 border border-gray-700 rounded-lg text-center">
           <p className="text-sm text-gray-300">
