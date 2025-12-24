@@ -90,11 +90,11 @@ export default function HeroSection() {
               alt="Karnataka State Open University"
               className="h-40 w-auto object-contain"
             />
-            <div className="bg-white rounded-lg p-6 flex items-center justify-center">
+            <div className="bg-white rounded-lg px-4 py-2 flex items-center justify-center h-40">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F8507eab6c65644c2a604cd0b74a430f4?format=webp&width=800"
                 alt="Prajna Pravah"
-                className="h-40 w-auto object-contain"
+                className="w-auto object-contain"
               />
             </div>
             <img
