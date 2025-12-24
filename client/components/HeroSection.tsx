@@ -73,7 +73,7 @@ export default function HeroSection() {
               Bharat's Worldview
             </p>
             <p className="text-lg sm:text-xl font-semibold text-gray-100">
-              25–27 March 2026
+              25–27 March 2026 • Mysore, India
             </p>
           </div>
 
