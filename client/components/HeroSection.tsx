@@ -128,18 +128,20 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a
-              href="#registration"
+            <Link
+              to="/registration"
+              onClick={() => window.scrollTo(0, 0)}
               className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
             >
               Register Now
-            </a>
-            <a
-              href="#papers"
+            </Link>
+            <Link
+              to="/call-for-papers"
+              onClick={() => window.scrollTo(0, 0)}
               className="px-8 py-3 bg-white bg-opacity-20 text-white font-semibold rounded-lg border border-white hover:bg-opacity-30 transition-colors backdrop-blur-sm"
             >
               Call for Papers
-            </a>
+            </Link>
           </div>
         </div>
       </div>
