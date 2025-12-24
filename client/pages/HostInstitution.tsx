@@ -52,9 +52,15 @@ export default function HostInstitution() {
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-secondary mb-3">Dr. Syama Prasad Mookerjee Research Foundation</h3>
+                  <h3 className="text-xl font-bold text-secondary mb-3">Dr. Syama Prasad Mookerjee Research Foundation (SPMRF)</h3>
+                  <p className="text-base text-black leading-relaxed mb-3">
+                    Dr. Syama Prasad Mookerjee Research Foundation (SPMRF) is a national intellectual platform dedicated to strengthening India's unity, integrity, and integral development. Inspired by the nationalist vision of Dr. Syama Prasad Mookerjee and Pandit Deendayal Upadhyaya, the Foundation works to promote ideas aligned with India's national interest.
+                  </p>
+                  <p className="text-base text-black leading-relaxed mb-3">
+                    Through research, publications, debates, discussions, and policy advocacy, SPMRF examines contemporary challenges in their historical and civilisational context. It brings together experts, academicians, practitioners, and opinion-makers to shape informed public discourse.
+                  </p>
                   <p className="text-base text-black leading-relaxed">
-                    An organization committed to research and scholarship in Indian civilization, culture, and philosophical traditions.
+                    Committed to national resurgence, cultural rejuvenation, integration, and self-reliance, SPMRF strives to nurture an intellectual ecosystem that upholds the vision of a united and strong India.
                   </p>
                 </div>
               </div>
