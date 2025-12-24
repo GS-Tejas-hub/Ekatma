@@ -32,7 +32,6 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
     { label: "Call for Papers", href: "/call-for-papers" },
     { label: "Important Dates", href: "/important-dates" },
     { label: "Registration", href: "/registration" },
