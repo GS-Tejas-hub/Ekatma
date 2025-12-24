@@ -31,38 +31,6 @@ export default function Speakers() {
             </p>
           </div>
 
-          <section className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-8 border border-primary-200 mb-16">
-            <h2 className="text-2xl font-bold text-foreground mb-6">
-              Speaker Categories
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-primary mb-3">Keynote Speakers</h3>
-                <p className="text-base text-black">
-                  Eminent scholars delivering plenary addresses on major themes of the conference.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-primary mb-3">Research Presenters</h3>
-                <p className="text-base text-black">
-                  Authors of accepted papers presenting their research findings and insights.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-primary mb-3">Panel Discussants</h3>
-                <p className="text-base text-black">
-                  Experts engaging in focused discussions on specific conference topics.
-                </p>
-              </div>
-              <div className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-primary mb-3">Moderators</h3>
-                <p className="text-base text-black">
-                  Experienced academics facilitating sessions and Q&A interactions.
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
             <h3 className="text-2xl font-bold text-foreground mb-4">Submit Your Research</h3>
