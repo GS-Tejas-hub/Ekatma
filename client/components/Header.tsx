@@ -49,7 +49,11 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:bg-muted rounded-lg"
+            className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
+              isHome
+                ? "text-foreground hover:bg-muted"
+                : "text-white hover:bg-primary-600"
+            }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
