@@ -90,11 +90,13 @@ export default function HeroSection() {
               alt="Karnataka State Open University"
               className="h-40 w-auto object-contain"
             />
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F8507eab6c65644c2a604cd0b74a430f4?format=webp&width=800"
-              alt="Prajna Pravah"
-              className="h-40 w-auto object-contain"
-            />
+            <div className="bg-white rounded-lg p-6 flex items-center justify-center">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F8507eab6c65644c2a604cd0b74a430f4?format=webp&width=800"
+                alt="Prajna Pravah"
+                className="h-40 w-auto object-contain"
+              />
+            </div>
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fb6882a0e120443568afd5a37e5ba2d5b?format=webp&width=800"
               alt="Dr. Syama Prasad Mookerjee Research Foundation"
