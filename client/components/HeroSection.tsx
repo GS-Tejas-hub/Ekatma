@@ -96,7 +96,7 @@ export default function HeroSection() {
               className="h-40 w-auto object-contain"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F3e8fc7d1d60b45749080e75fe1250b65?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fb6882a0e120443568afd5a37e5ba2d5b?format=webp&width=800"
               alt="Dr. Syama Prasad Mookerjee Research Foundation"
               className="h-40 w-auto object-contain"
             />
