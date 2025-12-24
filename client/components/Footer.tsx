@@ -187,6 +187,13 @@ export default function Footer() {
             — Pandit Deendayal Upadhyaya
           </p>
         </div>
+
+        {/* CMT Acknowledgement */}
+        <div className="mt-12 p-6 bg-gray-800 border border-gray-700 rounded-lg text-center">
+          <p className="text-sm text-gray-300">
+            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
+        </div>
       </div>
     </footer>
   );
