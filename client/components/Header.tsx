@@ -24,7 +24,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
+    <header className={`sticky top-0 z-50 border-b shadow-sm transition-colors duration-200 ${
+      isHome ? "bg-white border-border" : "bg-primary text-white border-primary-700"
+    }`}>
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between md:justify-center h-auto py-4">
           {/* Desktop Navigation */}
