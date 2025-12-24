@@ -72,6 +72,28 @@ export default function ContactSection() {
           </div>
 
         </div>
+
+        {/* CTA Section */}
+        <div className="mt-16 pt-16 border-t border-border text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-4">Next Steps</h3>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Ready to participate in the conference?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/call-for-papers"
+              className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
+            >
+              Submit a Paper
+            </a>
+            <a
+              href="/registration"
+              className="px-8 py-3 bg-white border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
