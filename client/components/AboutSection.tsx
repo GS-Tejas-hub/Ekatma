@@ -194,7 +194,7 @@ export default function AboutSection() {
                     {
                       name: "ICPR",
                       desc: "Organization",
-                      icon: "🏛️",
+                      logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F87758aeb8fc64f33837c30a2bbbae161?format=webp&width=800",
                       color: "bg-indigo-50"
                     },
                   ].map((partner, idx) => (
