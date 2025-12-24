@@ -15,25 +15,24 @@ export default function ContactSection() {
         {/* Contact Information */}
         <div className="max-w-4xl mx-auto">
           {/* Contact Details */}
-          <div className="max-w-2xl mx-auto mb-12">
-            <div className="bg-white border border-primary-200 rounded-lg p-8">
-              <h3 className="text-xl font-bold text-primary mb-6">
-                Get in Touch
-              </h3>
-              <div className="space-y-6">
-                <div>
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">Name</p>
-                  <p className="text-lg font-semibold text-foreground">Dr. Punith Raj K N</p>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground font-semibold mb-2">Phone</p>
-                  <p className="text-lg text-black">
-                    <a href="tel:+919845537663" className="text-primary font-semibold hover:underline">
-                      +91 98455 37663
-                    </a>
-                  </p>
-                </div>
-              </div>
+          <div className="max-w-2xl mx-auto mb-12 bg-white border border-primary-200 rounded-lg p-8">
+            <div className="space-y-4">
+              <p className="text-base text-black">
+                <span className="font-semibold">Dr. Punith Raj K N</span>
+              </p>
+              <p className="text-base text-black">
+                <a href="tel:+919845537663" className="text-primary font-semibold hover:underline">
+                  +91 98455 37663
+                </a>
+              </p>
+              <p className="text-base text-black">
+                <span className="font-semibold">Dr. Niranjan B Poojar</span>
+              </p>
+              <p className="text-base text-black">
+                <a href="tel:+919164582650" className="text-primary font-semibold hover:underline">
+                  +91 9164582650
+                </a>
+              </p>
             </div>
           </div>
 
