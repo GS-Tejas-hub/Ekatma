@@ -63,13 +63,21 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden pb-6 border-t border-border pt-6">
+          <nav className={`md:hidden pb-6 pt-6 border-t transition-colors duration-200 ${
+            isHome
+              ? "border-border bg-white"
+              : "border-primary-700 bg-primary-600"
+          }`}>
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
                   to={link.href}
-                  className="text-base font-bold text-foreground hover:text-primary transition-colors"
+                  className={`text-base font-bold transition-colors ${
+                    isHome
+                      ? "text-foreground hover:text-primary"
+                      : "text-white hover:text-primary-100"
+                  }`}
                   onClick={() => {
                     setIsMenuOpen(false);
                     window.scrollTo(0, 0);
