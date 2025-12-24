@@ -36,7 +36,11 @@ export default function Header() {
                 key={link.label}
                 to={link.href}
                 onClick={() => window.scrollTo(0, 0)}
-                className="text-base font-semibold text-foreground hover:text-primary transition-colors duration-200 whitespace-nowrap"
+                className={`text-base font-semibold transition-colors duration-200 whitespace-nowrap ${
+                  isHome
+                    ? "text-foreground hover:text-primary"
+                    : "text-white hover:text-primary-100"
+                }`}
               >
                 {link.label}
               </Link>
