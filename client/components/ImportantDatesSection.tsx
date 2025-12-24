@@ -67,6 +67,28 @@ export default function ImportantDatesSection() {
               <strong>⚠️ Important:</strong> All dates are subject to change. Please check this website regularly for any updates.
             </p>
           </div>
+
+          {/* CTA Section */}
+          <div className="mt-16 pt-16 border-t border-border text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Don't Miss Out</h3>
+            <p className="text-lg text-muted-foreground mb-8">
+              Submit your paper before the deadline or register to attend the conference.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/call-for-papers"
+                className="px-8 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
+              >
+                Call for Papers
+              </a>
+              <a
+                href="/registration"
+                className="px-8 py-3 bg-white border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary-50 transition-colors"
+              >
+                Register Now
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
