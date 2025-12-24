@@ -142,42 +142,20 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Bottom Section */}
-          <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row items-center justify-between">
-            <div className="text-base text-gray-400 mb-6 md:mb-0">
-              <p>
-                © {currentYear} International Academic Conference on Ekatma
-                Manav Darshan. All rights reserved.
-              </p>
-            </div>
-
-            <div className="flex gap-6">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-secondary text-base transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-secondary text-base transition-colors"
-              >
-                Terms & Conditions
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-secondary text-base transition-colors"
-              >
-                Code of Conduct
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* CMT Acknowledgement */}
         <div className="mt-6 p-6 bg-gray-800 border border-gray-700 rounded-lg text-center">
           <p className="text-sm text-gray-300">
             The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-6 text-center text-base text-gray-400">
+          <p>
+            © {currentYear} International Academic Conference on Ekatma
+            Manav Darshan. All rights reserved.
           </p>
         </div>
       </div>
