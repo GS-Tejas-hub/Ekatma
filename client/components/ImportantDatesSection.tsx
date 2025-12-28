@@ -54,15 +54,19 @@ export default function ImportantDatesSection() {
           {/* Notice */}
           <div className="mt-12 p-6 bg-primary-50 border border-primary-200 rounded-lg">
             <p className="text-base text-black text-center">
-              <strong>⚠️ Important:</strong> All dates are subject to change. Please check this website regularly for any updates.
+              <strong>⚠️ Important:</strong> All dates are subject to change.
+              Please check this website regularly for any updates.
             </p>
           </div>
 
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Don't Miss Out</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Don't Miss Out
+            </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              Submit your paper before the deadline or register to attend the conference.
+              Submit your paper before the deadline or register to attend the
+              conference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

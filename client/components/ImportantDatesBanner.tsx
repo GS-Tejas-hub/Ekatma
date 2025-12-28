@@ -25,7 +25,10 @@ export default function ImportantDatesBanner() {
       `}</style>
       <div className="flex gap-8 whitespace-nowrap scroll-text">
         {[...dates, ...dates, ...dates].map((item, idx) => (
-          <span key={idx} className="text-sm font-semibold flex items-center gap-2 px-4">
+          <span
+            key={idx}
+            className="text-sm font-semibold flex items-center gap-2 px-4"
+          >
             <span>📅</span>
             <span>{item.label}:</span>
             <span className="font-bold text-white">{item.date}</span>
