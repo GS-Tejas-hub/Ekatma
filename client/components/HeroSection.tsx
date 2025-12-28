@@ -80,8 +80,8 @@ export default function HeroSection() {
 
           {/* Tagline */}
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto">
-            Commemorating 60 Years of Pandit Deendayal Upadhyaya's Historic
-            Lectures on Integral Humanism
+            Commemorating 60 Years of Pandit Deendayal Upadhyaya's historic
+            lectures on Ekatma Manav Darshan
           </p>
 
           {/* Logos */}
