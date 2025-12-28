@@ -11,16 +11,6 @@ export default function ImportantDatesSection() {
       icon: "📝",
     },
     {
-      milestone: "Author Notification",
-      date: "31 March 2026",
-      icon: "✉️",
-    },
-    {
-      milestone: "Camera-Ready Deadline",
-      date: "20 April 2026",
-      icon: "📄",
-    },
-    {
       milestone: "Conference Dates",
       date: "25-27 March 2026",
       icon: "📅",
