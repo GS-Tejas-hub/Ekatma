@@ -234,7 +234,7 @@ export default function RegistrationSection() {
               <button
                 onClick={() => {
                   alert(
-                    `Processing ${paymentMethod === "card" ? "card" : "UPI"} payment for ${registrationTiers.find((t) => t.id === selectedTier)?.title}. Connect Stripe to integrate real payment processing.`
+                    `Processing ${paymentMethod === "card" ? "card" : "UPI"} payment for ${registrationTiers.find((t) => t.id === selectedTier)?.title}. Payment processing will be configured soon.`
                   );
                 }}
                 className="flex-1 px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
