@@ -24,7 +24,7 @@ export default function Speakers() {
               Featured Speakers
             </h2>
             <p className="text-base text-black leading-relaxed mb-6">
-              The Ekatma Manav Darshan Conference brings together renowned academics, philosophers, policymakers, and thought leaders from across the world to discuss the philosophical foundations and contemporary relevance of Ekatma Manav Darshan.
+              The Ekatma Manav Darshan Conference brings together renowned academics, philosophers, policymakers, and thought leaders from across the world to discuss the Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan and its contemporary relevance.
             </p>
             <p className="text-base text-muted-foreground">
               Detailed information about keynote speakers, their research interests, and presentation topics will be updated as confirmations are finalized.
