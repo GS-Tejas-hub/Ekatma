@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function CallForPapersSection() {
   const topics = [
     {
-      category: "Philosophical Foundations",
+      category: "Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan",
       items: [
         "Ekatmabhava as Ontology",
         "Holistic Anthropology",
