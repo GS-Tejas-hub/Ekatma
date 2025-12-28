@@ -66,7 +66,7 @@ export default function ProgrammeSchedule() {
               <div className="flex gap-4">
                 <span className="text-2xl text-secondary">✓</span>
                 <div>
-                  <p className="font-bold text-foreground mb-1">Research Presentations (20–25 min)</p>
+                  <p className="font-bold text-foreground mb-1">Research Presentations (10 min)</p>
                   <p className="text-base text-black">Author presentations with Q&A</p>
                 </div>
               </div>
