@@ -68,6 +68,13 @@ export default function HostInstitution() {
                   </p>
                 </div>
                 <div>
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Fb6882a0e120443568afd5a37e5ba2d5b?format=webp&width=800"
+                      alt="Dr. Syama Prasad Mookerjee Research Foundation"
+                      className="h-32 w-auto object-contain"
+                    />
+                  </div>
                   <h3 className="text-xl font-bold text-secondary mb-3">Dr. Syama Prasad Mookerjee Research Foundation (SPMRF)</h3>
                   <p className="text-base text-black leading-relaxed mb-3">
                     Dr. Syama Prasad Mookerjee Research Foundation (SPMRF) is a national intellectual platform dedicated to strengthening India's unity, integrity, and integral development. Inspired by the nationalist vision of Dr. Syama Prasad Mookerjee and Pandit Deendayal Upadhyaya, the Foundation works to promote ideas aligned with India's national interest.
