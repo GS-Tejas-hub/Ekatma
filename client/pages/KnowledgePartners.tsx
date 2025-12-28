@@ -4,28 +4,7 @@ import ImportantDatesBanner from "@/components/ImportantDatesBanner";
 import Footer from "@/components/Footer";
 
 export default function KnowledgePartners() {
-  const partners = [
-    {
-      name: "Springer",
-      category: "Publishing Partner",
-      description: "Global leader in academic publishing, bringing conference proceedings and selected papers to international readership."
-    },
-    {
-      name: "Indian Council of Philosophical Research (ICPR)",
-      category: "Research Organization",
-      description: "Dedicated to advancing philosophical research and scholarship in India."
-    },
-    {
-      name: "Prajna Pravah",
-      category: "Knowledge Organization",
-      description: "Building civilizational narratives and fostering intellectual discourse on Indic thought."
-    },
-    {
-      name: "Dr. Syama Prasad Mookerjee Research Foundation",
-      category: "Research Foundation",
-      description: "Committed to research and scholarship in Indian civilization and philosophical traditions."
-    },
-  ];
+  const partners = [];
 
   return (
     <div className="min-h-screen bg-white">
