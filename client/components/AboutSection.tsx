@@ -276,7 +276,7 @@ export default function AboutSection() {
               {
                 number: 4,
                 title: "Encourage Academic Dialogue",
-                description: "To encourage academic dialogue across disciplines and promote research rooted in Hindu civilizational wisdom."
+                description: "To encourage academic dialogue across disciplines and promote research rooted in Bharatiya civilizational wisdom."
               },
               {
                 number: 5,
