@@ -50,6 +50,15 @@ export default function HostInstitution() {
               </h2>
               <div className="space-y-8">
                 <div>
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-white rounded-lg px-4 py-2 flex items-center justify-center h-32">
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F8507eab6c65644c2a604cd0b74a430f4?format=webp&width=800"
+                        alt="Prajna Pravah"
+                        className="w-auto object-contain"
+                      />
+                    </div>
+                  </div>
                   <h3 className="text-xl font-bold text-primary mb-3">Prajna Pravah</h3>
                   <p className="text-base text-black leading-relaxed mb-3">
                     Prajna Pravah is a global intellectual movement, not merely a forum, committed to the resurgence of Bharatiya civilizational consciousness and Indic knowledge. It serves as an interconnected network of thinkers, academicians, policy scholars, think tanks, intellectual forums, and organizations across India and abroad.
