@@ -66,10 +66,10 @@ export default function CallForPapersSection() {
           </p>
         </div>
 
-        {/* Research Areas */}
+        {/* Thematic Areas */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
-            Research Areas
+            Thematic Areas
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {topics.map((topic, idx) => (
