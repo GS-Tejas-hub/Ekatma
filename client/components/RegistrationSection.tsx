@@ -85,7 +85,6 @@ export default function RegistrationSection() {
               key={tier.id}
               className="relative rounded-xl border-2 border-border bg-white hover:shadow-lg transition-all duration-300"
             >
-
               <div className="p-8">
                 {/* Tier Info */}
                 <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -131,7 +130,10 @@ export default function RegistrationSection() {
 
         {/* Payment Section */}
         {selectedTier && (
-          <div id="payment-section" className="bg-gradient-to-b from-gray-50 to-white border border-border rounded-xl p-8 md:p-12">
+          <div
+            id="payment-section"
+            className="bg-gradient-to-b from-gray-50 to-white border border-border rounded-xl p-8 md:p-12"
+          >
             <h3 className="text-2xl font-bold text-foreground mb-8">
               Complete Your Registration
             </h3>
@@ -174,7 +176,9 @@ export default function RegistrationSection() {
                     name="payment"
                     value="card"
                     checked={paymentMethod === "card"}
-                    onChange={(e) => setPaymentMethod(e.target.value as "card" | "upi")}
+                    onChange={(e) =>
+                      setPaymentMethod(e.target.value as "card" | "upi")
+                    }
                     className="sr-only"
                   />
                   <div
@@ -199,7 +203,9 @@ export default function RegistrationSection() {
                     name="payment"
                     value="upi"
                     checked={paymentMethod === "upi"}
-                    onChange={(e) => setPaymentMethod(e.target.value as "card" | "upi")}
+                    onChange={(e) =>
+                      setPaymentMethod(e.target.value as "card" | "upi")
+                    }
                     className="sr-only"
                   />
                   <div
@@ -234,7 +240,7 @@ export default function RegistrationSection() {
               <button
                 onClick={() => {
                   alert(
-                    `Processing ${paymentMethod === "card" ? "card" : "UPI"} payment for ${registrationTiers.find((t) => t.id === selectedTier)?.title}. Payment processing will be configured soon.`
+                    `Processing ${paymentMethod === "card" ? "card" : "UPI"} payment for ${registrationTiers.find((t) => t.id === selectedTier)?.title}. Payment processing will be configured soon.`,
                   );
                 }}
                 className="flex-1 px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg"
@@ -292,7 +298,9 @@ export default function RegistrationSection() {
 
         {/* CTA Section */}
         <div className="mt-16 pt-16 border-t border-border text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Explore More</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4">
+            Explore More
+          </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Learn about the conference topics, guidelines, and important dates.
           </p>
