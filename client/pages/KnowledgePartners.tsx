@@ -23,7 +23,10 @@ export default function KnowledgePartners() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             {partners.map((partner, idx) => (
-              <div key={idx} className="bg-white border border-border rounded-lg p-8 hover:shadow-lg transition-shadow">
+              <div
+                key={idx}
+                className="bg-white border border-border rounded-lg p-8 hover:shadow-lg transition-shadow"
+              >
                 <h3 className="text-xl font-bold text-primary mb-2">
                   {partner.name}
                 </h3>
@@ -42,18 +45,28 @@ export default function KnowledgePartners() {
               About Our Partnership
             </h2>
             <p className="text-base text-black leading-relaxed mb-4">
-              Our knowledge partners bring together expertise in academic publishing, philosophical research, civilizational studies, and institutional excellence. Together, we create a comprehensive ecosystem that supports rigorous scholarship and global dissemination of research on Ekatma Manav Darshan and related philosophical traditions.
+              Our knowledge partners bring together expertise in academic
+              publishing, philosophical research, civilizational studies, and
+              institutional excellence. Together, we create a comprehensive
+              ecosystem that supports rigorous scholarship and global
+              dissemination of research on Ekatma Manav Darshan and related
+              philosophical traditions.
             </p>
             <p className="text-base text-black leading-relaxed">
-              These partnerships ensure that the conference maintains the highest standards of academic integrity, intellectual rigor, and international visibility.
+              These partnerships ensure that the conference maintains the
+              highest standards of academic integrity, intellectual rigor, and
+              international visibility.
             </p>
           </section>
 
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Contribute to the Discourse</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Contribute to the Discourse
+            </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Submit your research and be part of this international academic network.
+              Submit your research and be part of this international academic
+              network.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

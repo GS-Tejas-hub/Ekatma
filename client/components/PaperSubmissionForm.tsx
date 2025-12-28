@@ -31,7 +31,9 @@ export default function PaperSubmissionForm() {
   const [error, setError] = useState("");
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -43,12 +45,12 @@ export default function PaperSubmissionForm() {
   const handleAuthorChange = (
     id: string,
     field: keyof Author,
-    value: string | boolean
+    value: string | boolean,
   ) => {
     setFormData((prev) => ({
       ...prev,
       authors: prev.authors.map((author) =>
-        author.id === id ? { ...author, [field]: value } : author
+        author.id === id ? { ...author, [field]: value } : author,
       ),
     }));
   };
@@ -176,7 +178,9 @@ export default function PaperSubmissionForm() {
       setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
       setError(
-        err instanceof Error ? err.message : "An error occurred during submission"
+        err instanceof Error
+          ? err.message
+          : "An error occurred during submission",
       );
     } finally {
       setIsSubmitting(false);
@@ -202,7 +206,8 @@ export default function PaperSubmissionForm() {
             Submit Your Paper
           </h2>
           <p className="text-lg text-muted-foreground">
-            Complete the form below to submit your research paper for consideration
+            Complete the form below to submit your research paper for
+            consideration
           </p>
         </div>
 
@@ -213,8 +218,8 @@ export default function PaperSubmissionForm() {
               ✓ Paper submitted successfully!
             </p>
             <p className="text-sm text-green-700 mt-2">
-              You will receive a confirmation email shortly. We will review your paper
-              and notify you of the outcome.
+              You will receive a confirmation email shortly. We will review your
+              paper and notify you of the outcome.
             </p>
           </div>
         )}
@@ -393,7 +398,7 @@ export default function PaperSubmissionForm() {
                         handleAuthorChange(
                           author.id,
                           "affiliation",
-                          e.target.value
+                          e.target.value,
                         )
                       }
                       placeholder="University/Institution Name"
@@ -410,7 +415,7 @@ export default function PaperSubmissionForm() {
                         handleAuthorChange(
                           author.id,
                           "isCorresponding",
-                          e.target.checked
+                          e.target.checked,
                         )
                       }
                       className="w-4 h-4 rounded border-border"
@@ -426,7 +431,9 @@ export default function PaperSubmissionForm() {
 
           {/* Guidelines */}
           <div className="bg-primary-50 border border-primary-200 rounded-lg p-6">
-            <h4 className="font-semibold text-primary mb-3">Submission Guidelines</h4>
+            <h4 className="font-semibold text-primary mb-3">
+              Submission Guidelines
+            </h4>
             <ul className="text-sm text-muted-foreground space-y-2">
               <li>✓ Abstract should be 100-500 words</li>
               <li>✓ Final paper should be 5,000-7,000 words</li>
@@ -467,8 +474,8 @@ export default function PaperSubmissionForm() {
         {/* Info Box */}
         <div className="mt-12 bg-secondary-50 border border-secondary-200 rounded-lg p-6">
           <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="font-semibold text-foreground">Questions?</span> Contact
-            Dr. Niranjan B Poojar at{" "}
+            <span className="font-semibold text-foreground">Questions?</span>{" "}
+            Contact Dr. Niranjan B Poojar at{" "}
             <a
               href="tel:+919164582650"
               className="text-secondary hover:underline font-semibold"

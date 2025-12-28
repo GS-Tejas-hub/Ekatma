@@ -25,10 +25,16 @@ export default function OrganisingCommittee() {
                 Committee Overview
               </h2>
               <p className="text-base text-black leading-relaxed mb-4">
-                The Organising Committee comprises distinguished academics, scholars, and institutional leaders who are responsible for the overall planning, coordination, and execution of the Ekatma Manav Darshan Conference.
+                The Organising Committee comprises distinguished academics,
+                scholars, and institutional leaders who are responsible for the
+                overall planning, coordination, and execution of the Ekatma
+                Manav Darshan Conference.
               </p>
               <p className="text-base text-black leading-relaxed">
-                Working in collaboration with host institutions and knowledge partners, the committee ensures that the conference meets the highest standards of academic excellence and logistical efficiency.
+                Working in collaboration with host institutions and knowledge
+                partners, the committee ensures that the conference meets the
+                highest standards of academic excellence and logistical
+                efficiency.
               </p>
             </section>
 
@@ -40,36 +46,61 @@ export default function OrganisingCommittee() {
                 <div className="flex gap-4">
                   <span className="text-2xl text-secondary">✓</span>
                   <div>
-                    <p className="font-bold text-foreground mb-1">Academic Program Design</p>
-                    <p className="text-base text-black">Curating the conference sessions, keynote speakers, and research presentations</p>
+                    <p className="font-bold text-foreground mb-1">
+                      Academic Program Design
+                    </p>
+                    <p className="text-base text-black">
+                      Curating the conference sessions, keynote speakers, and
+                      research presentations
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-2xl text-secondary">✓</span>
                   <div>
-                    <p className="font-bold text-foreground mb-1">Peer Review Process</p>
-                    <p className="text-base text-black">Overseeing the selection and evaluation of submitted papers</p>
+                    <p className="font-bold text-foreground mb-1">
+                      Peer Review Process
+                    </p>
+                    <p className="text-base text-black">
+                      Overseeing the selection and evaluation of submitted
+                      papers
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-2xl text-secondary">✓</span>
                   <div>
-                    <p className="font-bold text-foreground mb-1">Logistics & Coordination</p>
-                    <p className="text-base text-black">Managing venue arrangements, scheduling, and conference operations</p>
+                    <p className="font-bold text-foreground mb-1">
+                      Logistics & Coordination
+                    </p>
+                    <p className="text-base text-black">
+                      Managing venue arrangements, scheduling, and conference
+                      operations
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-2xl text-secondary">✓</span>
                   <div>
-                    <p className="font-bold text-foreground mb-1">Quality Assurance</p>
-                    <p className="text-base text-black">Maintaining academic standards and ensuring exceptional participant experience</p>
+                    <p className="font-bold text-foreground mb-1">
+                      Quality Assurance
+                    </p>
+                    <p className="text-base text-black">
+                      Maintaining academic standards and ensuring exceptional
+                      participant experience
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <span className="text-2xl text-secondary">✓</span>
                   <div>
-                    <p className="font-bold text-foreground mb-1">Partnership Management</p>
-                    <p className="text-base text-black">Coordinating with institutional partners and international collaborators</p>
+                    <p className="font-bold text-foreground mb-1">
+                      Partnership Management
+                    </p>
+                    <p className="text-base text-black">
+                      Coordinating with institutional partners and international
+                      collaborators
+                    </p>
                   </div>
                 </div>
               </div>
@@ -84,45 +115,54 @@ export default function OrganisingCommittee() {
                   {
                     name: "Prof. Sharanappa V. Halse",
                     position: "Vice-Chancellor, KSOU",
-                    contact: "vcksou-19@ka.gov.in"
+                    contact: "vcksou-19@ka.gov.in",
                   },
                   {
                     name: "Shri Raghunandan",
-                    position: "Chief Mentor, Nation Co-convenor, Prajna Pravah"
+                    position: "Chief Mentor, Nation Co-convenor, Prajna Pravah",
                   },
                   {
                     name: "Dr. Pradeep Bharadwaj",
                     position: "Convenor, Prajna Pravah South",
-                    contact: "Pradeepbharadwaja@gmail.com"
+                    contact: "Pradeepbharadwaja@gmail.com",
                   },
                   {
                     name: "Dr. Niranjan B Poojar",
                     position: "Convenor, Prajna Pravah North",
-                    contact: "niranjanbgp@cuk.ac.in"
+                    contact: "niranjanbgp@cuk.ac.in",
                   },
                   {
                     name: "Dr. Punith Raj K N",
-                    position: "Co-convenor, Prajna Pravah South"
+                    position: "Co-convenor, Prajna Pravah South",
                   },
                   {
                     name: "Shri K N Patil",
-                    position: "Co-convenor, Prajna Pravah North"
+                    position: "Co-convenor, Prajna Pravah North",
                   },
                   {
                     name: "Shri Shivanand Patil",
-                    position: "Co-convenor, Prajna Pravah North"
+                    position: "Co-convenor, Prajna Pravah North",
                   },
                   {
                     name: "Dr. Hanumanth Joshi",
                     position: "Principal, Sarada Vilas College Mysuru",
-                    contact: "Mysoresvcp@gmail.com"
-                  }
+                    contact: "Mysoresvcp@gmail.com",
+                  },
                 ].map((member, idx) => (
-                  <div key={idx} className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
-                    <h3 className="text-lg font-bold text-primary mb-2">{member.name}</h3>
-                    <p className="text-base font-semibold text-foreground mb-2">{member.position}</p>
+                  <div
+                    key={idx}
+                    className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow"
+                  >
+                    <h3 className="text-lg font-bold text-primary mb-2">
+                      {member.name}
+                    </h3>
+                    <p className="text-base font-semibold text-foreground mb-2">
+                      {member.position}
+                    </p>
                     {member.contact && (
-                      <p className="text-base text-muted-foreground">{member.contact}</p>
+                      <p className="text-base text-muted-foreground">
+                        {member.contact}
+                      </p>
                     )}
                   </div>
                 ))}
@@ -132,9 +172,12 @@ export default function OrganisingCommittee() {
 
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Get Involved</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Get Involved
+            </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Participate in this premier academic event and be part of a global discourse on civilizational philosophy.
+              Participate in this premier academic event and be part of a global
+              discourse on civilizational philosophy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

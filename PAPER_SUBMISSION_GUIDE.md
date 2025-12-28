@@ -9,6 +9,7 @@ Your conference website now includes a complete paper submission and management 
 ## 🎯 System Features
 
 ### For Authors:
+
 - **Paper Submission Form** - Collect paper title, abstract, keywords, and research category
 - **Author Management** - Add multiple authors with names, emails, and affiliations
 - **Corresponding Author** - Designate which author should be contacted
@@ -16,6 +17,7 @@ Your conference website now includes a complete paper submission and management 
 - **Confirmation** - Email-style confirmation after successful submission
 
 ### For Admin:
+
 - **Dashboard** - View all submitted papers in one place
 - **Statistics** - Track total submissions, authors, categories, and dates
 - **Search & Filter** - Find papers by title or author name
@@ -28,6 +30,7 @@ Your conference website now includes a complete paper submission and management 
 ## 🔗 Accessing the System
 
 ### Paper Submission Page
+
 - **URL**: `https://yoursite.com/submit-paper`
 - **Access**: Public - Anyone can submit papers
 - **Form Fields**:
@@ -39,6 +42,7 @@ Your conference website now includes a complete paper submission and management 
   - Corresponding Author designation
 
 ### Admin Dashboard
+
 - **URL**: `https://yoursite.com/admin/dashboard`
 - **Features**:
   - View all submissions
@@ -52,12 +56,15 @@ Your conference website now includes a complete paper submission and management 
 ## 📝 Paper Submission Process
 
 ### Step 1: Navigate to Submission Form
+
 Authors visit `/submit-paper` from:
+
 - "Submit Paper" button in hero section
 - "Submit Your Paper" link in Call for Papers section
 - Direct URL navigation
 
 ### Step 2: Fill in Paper Details
+
 1. **Paper Title** - Enter the research paper title
 2. **Abstract** - Write a 100-500 character abstract
 3. **Keywords** - Add relevant keywords (comma-separated)
@@ -71,6 +78,7 @@ Authors visit `/submit-paper` from:
    - Education & Knowledge
 
 ### Step 3: Add Authors
+
 1. **First Author** - Form starts with one author
 2. **Add More** - Click "Add Author" button to add co-authors
 3. **For Each Author**:
@@ -80,6 +88,7 @@ Authors visit `/submit-paper` from:
    - Mark as Corresponding Author (at least one required)
 
 ### Step 4: Submit
+
 - Click "Submit Paper" button
 - System validates all fields
 - Success message appears on completion
@@ -90,6 +99,7 @@ Authors visit `/submit-paper` from:
 ## 📊 Admin Dashboard Usage
 
 ### Access Dashboard
+
 1. Navigate to `/admin/dashboard`
 2. View statistics dashboard showing:
    - Total Submissions
@@ -98,12 +108,14 @@ Authors visit `/submit-paper` from:
    - Date of Last Submission
 
 ### Search & Filter
+
 - Use search box to find papers by:
   - Paper title (partial matches work)
   - Author name (partial matches work)
 - Results update in real-time
 
 ### View Submission Details
+
 1. Click on any paper in the list
 2. Right panel shows complete details:
    - Full paper title
@@ -115,6 +127,7 @@ Authors visit `/submit-paper` from:
 ### Export Submissions
 
 #### Export as CSV (Excel Compatible)
+
 1. Click "Export CSV" button
 2. File downloads automatically
 3. Opens in Excel or any spreadsheet application
@@ -130,12 +143,14 @@ Authors visit `/submit-paper` from:
    - Submitted Date
 
 #### Export as JSON
+
 1. Click "Export JSON" button
 2. File downloads with complete structured data
 3. Useful for programmatic processing
 4. Includes all submission details
 
 ### Delete Submissions
+
 1. Click trash icon on any submission
 2. Confirm deletion
 3. Submission is permanently removed
@@ -145,17 +160,20 @@ Authors visit `/submit-paper` from:
 ## 💾 Data Management & Processing
 
 ### Local Storage
+
 - Submissions are stored in: `data/submissions.json`
 - This file is created automatically
 - All data persists between sessions
 
 ### Exported CSV Format
+
 ```
 Submission ID,Paper Title,Category,Authors (Names),Authors (Emails),Authors (Affiliations),Abstract,Keywords,Submitted Date
 PAPER-1703001234,Understanding Dharma,Philosophical Foundations,John Doe; Jane Smith,john@uni.edu; jane@uni.edu,University A; University B,"Abstract text here...","Dharma, Ethics",2024-01-15T10:30:00.000Z
 ```
 
 ### Exported JSON Format
+
 ```json
 [
   {
@@ -182,6 +200,7 @@ PAPER-1703001234,Understanding Dharma,Philosophical Foundations,John Doe; Jane S
 ## 🚀 Google Drive Integration (Optional)
 
 ### Option 1: Manual Upload (Easiest)
+
 1. Export CSV from admin dashboard
 2. Open [Google Drive](https://drive.google.com)
 3. Click "New" → "File upload" or upload the CSV
@@ -189,6 +208,7 @@ PAPER-1703001234,Understanding Dharma,Philosophical Foundations,John Doe; Jane S
 5. Share link with your team
 
 ### Option 2: Google Drive API Integration (Advanced)
+
 To automate uploads to Google Drive:
 
 1. **Prerequisites**:
@@ -197,35 +217,37 @@ To automate uploads to Google Drive:
    - Google Drive folder ID
 
 2. **Installation**:
+
    ```bash
    npm install googleapis google-auth-library
    ```
 
 3. **Add to server routes** (`server/routes/google-drive.ts`):
+
    ```typescript
    import { google } from "googleapis";
-   
+
    const drive = google.drive({ version: "v3", auth });
-   
+
    export const uploadToGoogleDrive = async (
      fileName: string,
-     fileContent: string
+     fileContent: string,
    ) => {
      const fileMetadata = {
        name: fileName,
        parents: [process.env.GOOGLE_DRIVE_FOLDER_ID],
      };
-     
+
      const media = {
        mimeType: "text/csv",
        body: fileContent,
      };
-     
+
      const file = await drive.files.create({
        requestBody: fileMetadata,
        media: media,
      });
-     
+
      return file.data;
    };
    ```
@@ -235,6 +257,7 @@ To automate uploads to Google Drive:
    - Calls endpoint `/api/admin/submissions/upload-drive`
 
 ### Option 3: Zapier Automation (No Code)
+
 1. Connect Zapier to your website
 2. Trigger: New paper submission
 3. Action: Add row to Google Sheets
@@ -247,11 +270,13 @@ To automate uploads to Google Drive:
 Add email confirmations to authors:
 
 1. **Install email library**:
+
    ```bash
    npm install nodemailer
    ```
 
 2. **Setup in submission handler**:
+
    ```typescript
    const transporter = nodemailer.createTransport({
      service: "gmail",
@@ -260,7 +285,7 @@ Add email confirmations to authors:
        pass: process.env.EMAIL_PASSWORD,
      },
    });
-   
+
    // After successful submission
    await transporter.sendMail({
      to: submission.authors[0].email,
@@ -274,11 +299,13 @@ Add email confirmations to authors:
 ## 🔐 Security Notes
 
 ### Current Implementation
+
 - No authentication required for submissions (open call)
 - CSV/JSON exports available via API
 - Submissions stored in local JSON file
 
 ### For Production
+
 - Add authentication to admin dashboard
 - Implement password protection for `/admin/*` routes
 - Use environment variables for sensitive data
@@ -286,6 +313,7 @@ Add email confirmations to authors:
 - Backup submissions regularly
 
 ### Example Authentication
+
 ```typescript
 // Add to middleware
 app.use("/api/admin/*", (req, res, next) => {
@@ -327,21 +355,25 @@ After collecting submissions, you can:
 ## ❓ Troubleshooting
 
 ### Problem: Submissions not saving
+
 - Check if `data/` directory exists
 - Verify file write permissions
 - Check browser console for errors
 
 ### Problem: CSV export shows weird characters
+
 - Excel: File → Open → Select UTF-8 encoding
 - Or use Google Sheets: File → Import → Select CSV
 
 ### Problem: Form shows validation errors
-- All fields marked with * are required
+
+- All fields marked with \* are required
 - Email must contain @
 - Abstract must be 100-500 characters
 - At least one corresponding author required
 
 ### Problem: Admin dashboard shows no submissions
+
 - Verify API endpoint is working: `/api/admin/submissions`
 - Check browser network tab
 - Ensure submissions were actually submitted
@@ -351,6 +383,7 @@ After collecting submissions, you can:
 ## 📞 Support
 
 For technical questions:
+
 1. Check submission logs in `data/submissions.json`
 2. Review browser console (F12)
 3. Check server logs
@@ -361,18 +394,21 @@ For technical questions:
 ## 🔄 Next Steps
 
 ### Immediate Actions
+
 1. Test paper submission form
 2. Test admin dashboard access
 3. Export sample data as CSV/JSON
 4. Share admin link with organizing committee
 
 ### Week 1-2
+
 1. Begin accepting submissions
 2. Monitor submission volume
 3. Set up email notifications (optional)
 4. Create backup of submissions
 
 ### Pre-Conference
+
 1. Review all submissions
 2. Conduct peer review
 3. Generate final statistics

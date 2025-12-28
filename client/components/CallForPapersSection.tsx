@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 export default function CallForPapersSection() {
   const topics = [
     {
-      category: "1. Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan",
+      category:
+        "1. Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan",
       items: [
         "Ekatmabhava as Ontology: Unity of Jiva–Jagat–Ishwara; metaphysics of Virat Purusha",
         "Holistic Anthropology: Integrated human personality (Sharira–Manas–Buddhi–Atma)",
@@ -14,7 +15,8 @@ export default function CallForPapersSection() {
       ],
     },
     {
-      category: "2. Purushartha: A Civilizational Anthropology of Human Aspiration",
+      category:
+        "2. Purushartha: A Civilizational Anthropology of Human Aspiration",
       items: [
         "Integration of Dharma–Artha–Kama–Moksha: Framework for holistic flourishing",
         "Ethical Economics: Positioning Artha within Dharma for social harmony",
@@ -34,7 +36,8 @@ export default function CallForPapersSection() {
       ],
     },
     {
-      category: "4. Economic Thought: Sustainability, Self-Reliance, and Ecological Dharma",
+      category:
+        "4. Economic Thought: Sustainability, Self-Reliance, and Ecological Dharma",
       items: [
         "Decentralized Prosperity: Gram Swaraj and community-centred economic models",
         "Civilizational Economic Institutions: Cooperatives, trust-based commerce",
@@ -87,7 +90,10 @@ export default function CallForPapersSection() {
   ];
 
   return (
-    <section id="papers" className="py-8 md:py-12 bg-gradient-to-b from-gray-50 to-white">
+    <section
+      id="papers"
+      className="py-8 md:py-12 bg-gradient-to-b from-gray-50 to-white"
+    >
       <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -112,7 +118,9 @@ export default function CallForPapersSection() {
                 key={idx}
                 className="bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
-                <h4 className="font-bold text-primary mb-4">{topic.category}</h4>
+                <h4 className="font-bold text-primary mb-4">
+                  {topic.category}
+                </h4>
                 <ul className="space-y-2">
                   {topic.items.map((item, itemIdx) => (
                     <li
@@ -145,44 +153,67 @@ export default function CallForPapersSection() {
               </h4>
               <div className="space-y-4">
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Author Eligibility</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Author Eligibility
+                  </p>
                   <p className="text-base text-black">
-                    Open to scholars, researchers, academicians, and intellectuals with expertise or keen interest in Indic philosophy, cultural studies, and allied disciplines.
+                    Open to scholars, researchers, academicians, and
+                    intellectuals with expertise or keen interest in Indic
+                    philosophy, cultural studies, and allied disciplines.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Registration & Fees</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Registration & Fees
+                  </p>
                   <p className="text-base text-black">
-                    All authors presenting their work are required to register for the conference. Registration fees cover conference materials, meals, and participation in all sessions.
+                    All authors presenting their work are required to register
+                    for the conference. Registration fees cover conference
+                    materials, meals, and participation in all sessions.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Language</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Language
+                  </p>
                   <p className="text-base text-black">
-                    All submissions must be in English with professional academic language and clarity.
+                    All submissions must be in English with professional
+                    academic language and clarity.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Plagiarism & Originality</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Plagiarism & Originality
+                  </p>
                   <p className="text-base text-black">
-                    Papers must be original, unpublished work. Plagiarism detection will be performed on all submissions. Papers found to be plagiarized will be rejected.
+                    Papers must be original, unpublished work. Plagiarism
+                    detection will be performed on all submissions. Papers found
+                    to be plagiarized will be rejected.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Presentation Expectations</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Presentation Expectations
+                  </p>
                   <p className="text-base text-black">
-                    Authors of accepted papers are expected to attend the conference and present their work. Presentation slots are typically 10 minutes followed by Q&A.
+                    Authors of accepted papers are expected to attend the
+                    conference and present their work. Presentation slots are
+                    typically 10 minutes followed by Q&A.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 py-2">
-                  <p className="font-semibold text-foreground text-base mb-1">Publication Rights</p>
+                  <p className="font-semibold text-foreground text-base mb-1">
+                    Publication Rights
+                  </p>
                   <p className="text-base text-black">
-                    By submitting, authors agree that selected papers may be published in journal or conference proceedings. Copyright terms will be specified by the publisher.
+                    By submitting, authors agree that selected papers may be
+                    published in journal or conference proceedings. Copyright
+                    terms will be specified by the publisher.
                   </p>
                 </div>
               </div>
@@ -200,9 +231,13 @@ export default function CallForPapersSection() {
                     1
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Original & Unpublished Work</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Original & Unpublished Work
+                    </p>
                     <p className="text-base text-black">
-                      Submit original and unpublished papers aligned with the conference theme. No simultaneous submissions to other conferences or journals.
+                      Submit original and unpublished papers aligned with the
+                      conference theme. No simultaneous submissions to other
+                      conferences or journals.
                     </p>
                   </div>
                 </div>
@@ -212,7 +247,9 @@ export default function CallForPapersSection() {
                     2
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Paper Length</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Paper Length
+                    </p>
                     <p className="text-base text-black">
                       5,000–7,000 words, including references and appendices.
                     </p>
@@ -224,9 +261,12 @@ export default function CallForPapersSection() {
                     3
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Abstract & Keywords</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Abstract & Keywords
+                    </p>
                     <p className="text-base text-black">
-                      Include a structured abstract (200–250 words) and 5–6 relevant keywords to aid in indexing and discovery.
+                      Include a structured abstract (200–250 words) and 5–6
+                      relevant keywords to aid in indexing and discovery.
                     </p>
                   </div>
                 </div>
@@ -236,9 +276,12 @@ export default function CallForPapersSection() {
                     4
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Citation Style</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Citation Style
+                    </p>
                     <p className="text-base text-black">
-                      Follow APA (American Psychological Association) citation style for all references and in-text citations.
+                      Follow APA (American Psychological Association) citation
+                      style for all references and in-text citations.
                     </p>
                   </div>
                 </div>
@@ -248,9 +291,13 @@ export default function CallForPapersSection() {
                     5
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">File Format</p>
+                    <p className="font-semibold text-foreground text-base">
+                      File Format
+                    </p>
                     <p className="text-base text-black">
-                      Submit in MS Word format (.doc/.docx). Font: Times New Roman or Arial, 12 pt, single-spaced with 1.5-inch margins.
+                      Submit in MS Word format (.doc/.docx). Font: Times New
+                      Roman or Arial, 12 pt, single-spaced with 1.5-inch
+                      margins.
                     </p>
                   </div>
                 </div>
@@ -260,9 +307,13 @@ export default function CallForPapersSection() {
                     6
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Peer Review</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Peer Review
+                    </p>
                     <p className="text-base text-black">
-                      All papers will undergo double-blind peer review by two independent reviewers to ensure quality and academic rigor.
+                      All papers will undergo double-blind peer review by two
+                      independent reviewers to ensure quality and academic
+                      rigor.
                     </p>
                   </div>
                 </div>
@@ -272,9 +323,13 @@ export default function CallForPapersSection() {
                     7
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Author Declaration</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Author Declaration
+                    </p>
                     <p className="text-base text-black">
-                      Include a brief author bio (50–100 words), institutional affiliation, and contact information on a separate cover page.
+                      Include a brief author bio (50–100 words), institutional
+                      affiliation, and contact information on a separate cover
+                      page.
                     </p>
                   </div>
                 </div>
@@ -284,9 +339,12 @@ export default function CallForPapersSection() {
                     8
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground text-base">Publication & Presentation</p>
+                    <p className="font-semibold text-foreground text-base">
+                      Publication & Presentation
+                    </p>
                     <p className="text-base text-black">
-                      Selected papers will be considered for publication in peer-reviewed journals and presentation at the conference.
+                      Selected papers will be considered for publication in
+                      peer-reviewed journals and presentation at the conference.
                     </p>
                   </div>
                 </div>
@@ -311,7 +369,9 @@ export default function CallForPapersSection() {
                       CMT Submission Link Coming Shortly
                     </p>
                     <p className="text-base text-black">
-                      The CMT submission portal for the Ekatma Manav Darshan conference will be available soon. Please check back here or contact us for the direct submission link.
+                      The CMT submission portal for the Ekatma Manav Darshan
+                      conference will be available soon. Please check back here
+                      or contact us for the direct submission link.
                     </p>
                     <p className="text-base text-muted-foreground mt-3">
                       <strong>Submission Deadline:</strong> 25 February 2026
@@ -329,12 +389,19 @@ export default function CallForPapersSection() {
               <div className="space-y-6">
                 <div className="bg-amber-50 p-4 rounded-md border border-amber-200">
                   <p className="text-base text-black leading-relaxed">
-                    <strong className="text-foreground">Before you submit your paper:</strong> You will need to have a CMT (Conference Management Toolkit) account. If you don't already have one, create an account using the link below.
+                    <strong className="text-foreground">
+                      Before you submit your paper:
+                    </strong>{" "}
+                    You will need to have a CMT (Conference Management Toolkit)
+                    account. If you don't already have one, create an account
+                    using the link below.
                   </p>
                 </div>
 
                 <div>
-                  <p className="font-semibold text-foreground text-sm mb-3">Step 1: Create or Access Your CMT Account</p>
+                  <p className="font-semibold text-foreground text-sm mb-3">
+                    Step 1: Create or Access Your CMT Account
+                  </p>
                   <a
                     href="https://cmt3.research.microsoft.com/docs/help/general/account-creation.html"
                     target="_blank"
@@ -346,9 +413,12 @@ export default function CallForPapersSection() {
                 </div>
 
                 <div>
-                  <p className="font-semibold text-foreground text-sm mb-3">Step 2: Submit Your Paper</p>
+                  <p className="font-semibold text-foreground text-sm mb-3">
+                    Step 2: Submit Your Paper
+                  </p>
                   <p className="text-base text-black mb-3">
-                    Once you have your CMT account, follow the submission guidelines:
+                    Once you have your CMT account, follow the submission
+                    guidelines:
                   </p>
                   <a
                     href="https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html"
@@ -407,9 +477,7 @@ export default function CallForPapersSection() {
             <div className="relative">
               <div className="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full border-4 border-white -ml-2 -mt-2" />
               <div className="ml-6">
-                <p className="font-semibold text-foreground">
-                  Call for Papers
-                </p>
+                <p className="font-semibold text-foreground">Call for Papers</p>
                 <p className="text-base text-muted-foreground">Now Open</p>
               </div>
             </div>
@@ -439,7 +507,10 @@ export default function CallForPapersSection() {
         {/* CMT Acknowledgment */}
         <div className="mt-16 p-6 bg-gray-50 border border-border rounded-lg text-center">
           <p className="text-sm text-black">
-            The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            The Microsoft CMT service was used for managing the peer-reviewing
+            process for this conference. This service was provided for free by
+            Microsoft and they bore all expenses, including costs for Azure
+            cloud services as well as for software development and support.
           </p>
         </div>
 
@@ -449,21 +520,28 @@ export default function CallForPapersSection() {
             Publication & Indexing
           </h3>
           <p className="text-muted-foreground mb-8">
-            Selected papers will be published in the Journal of Indian Council of Philosophical Research (JICPR), which is indexed in major databases and collaborated with Springer.
+            Selected papers will be published in the Journal of Indian Council
+            of Philosophical Research (JICPR), which is indexed in major
+            databases and collaborated with Springer.
           </p>
 
           <div className="space-y-6">
             {/* Journal Information */}
             <div>
-              <h4 className="font-bold text-foreground mb-3">Journal: Indian Council of Philosophical Research (JICPR)</h4>
+              <h4 className="font-bold text-foreground mb-3">
+                Journal: Indian Council of Philosophical Research (JICPR)
+              </h4>
               <p className="text-base text-muted-foreground mb-4">
-                Published in collaboration with Springer | Official Publisher of ICPR
+                Published in collaboration with Springer | Official Publisher of
+                ICPR
               </p>
 
               {/* Indexing Details */}
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
-                  <p className="font-semibold text-foreground mb-2">Indexed Databases</p>
+                  <p className="font-semibold text-foreground mb-2">
+                    Indexed Databases
+                  </p>
                   <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Web of Science (ESCI)</li>
                     <li>✓ Scopus</li>
@@ -471,7 +549,9 @@ export default function CallForPapersSection() {
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
-                  <p className="font-semibold text-foreground mb-2">Impact Metrics Available On</p>
+                  <p className="font-semibold text-foreground mb-2">
+                    Impact Metrics Available On
+                  </p>
                   <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Researcher</li>
                     <li>✓ SCImago Journal Rank (SJR)</li>
@@ -482,54 +562,67 @@ export default function CallForPapersSection() {
 
               {/* Publishing Partners */}
               <div className="bg-white rounded-lg p-6 border border-blue-100">
-                <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
+                <p className="font-semibold text-foreground mb-4">
+                  Publishing Partners & Indexing Services
+                </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                   {[
                     {
                       name: "Springer",
                       desc: "Publisher",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F7575921c00be4946a339af580a542d48?format=webp&width=800",
-                      color: "bg-red-50"
+                      color: "bg-red-50",
                     },
                     {
                       name: "Web of Science",
                       desc: "Indexing",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Ffe460099db574780a5917d51ad4e6183?format=webp&width=800",
-                      color: "bg-blue-50"
+                      color: "bg-blue-50",
                     },
                     {
                       name: "Scopus",
                       desc: "Indexing",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6c5171089c4849e0be27a5f907e9a41e?format=webp&width=800",
-                      color: "bg-orange-50"
+                      color: "bg-orange-50",
                     },
                     {
                       name: "Scite.ai",
                       desc: "Analytics",
                       icon: "📊",
-                      color: "bg-green-50"
+                      color: "bg-green-50",
                     },
                     {
                       name: "SJR",
                       desc: "Metrics",
                       icon: "📈",
-                      color: "bg-purple-50"
+                      color: "bg-purple-50",
                     },
                     {
                       name: "ICPR",
                       desc: "Organization",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F87758aeb8fc64f33837c30a2bbbae161?format=webp&width=800",
-                      color: "bg-indigo-50"
+                      color: "bg-indigo-50",
                     },
                   ].map((partner, idx) => (
-                    <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
+                    <div
+                      key={idx}
+                      className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}
+                    >
                       {partner.logo ? (
-                        <img src={partner.logo} alt={partner.name} className="h-12 mb-2 object-contain" />
+                        <img
+                          src={partner.logo}
+                          alt={partner.name}
+                          className="h-12 mb-2 object-contain"
+                        />
                       ) : (
                         <div className="text-3xl mb-2">{partner.icon}</div>
                       )}
-                      <p className="text-base font-bold text-foreground">{partner.name}</p>
-                      <p className="text-base text-muted-foreground mt-1">{partner.desc}</p>
+                      <p className="text-base font-bold text-foreground">
+                        {partner.name}
+                      </p>
+                      <p className="text-base text-muted-foreground mt-1">
+                        {partner.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -538,9 +631,13 @@ export default function CallForPapersSection() {
 
             {/* Conference Proceedings */}
             <div className="bg-white rounded-lg p-4 border-l-4 border-primary">
-              <p className="font-semibold text-foreground mb-2">Conference Proceedings</p>
+              <p className="font-semibold text-foreground mb-2">
+                Conference Proceedings
+              </p>
               <p className="text-sm text-muted-foreground">
-                Abstracts of all papers will be included in the official Conference Proceedings, with full papers published in the JICPR journal.
+                Abstracts of all papers will be included in the official
+                Conference Proceedings, with full papers published in the JICPR
+                journal.
               </p>
             </div>
           </div>
@@ -548,9 +645,12 @@ export default function CallForPapersSection() {
 
         {/* CTA Section */}
         <div className="mt-16 pt-16 border-t border-border text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Ready to Submit?</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4">
+            Ready to Submit?
+          </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join us at the Ekatma Manav Darshan conference and contribute to the discourse on Bharat's worldview.
+            Join us at the Ekatma Manav Darshan conference and contribute to the
+            discourse on Bharat's worldview.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

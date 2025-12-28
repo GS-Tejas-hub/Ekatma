@@ -116,10 +116,10 @@ export default function HeroSection() {
                 Deendayal Upadhyaya was a prominent Indian thinker, philosopher,
                 and political leader known for shaping the ideological
                 foundation of modern Indian politics through his concept of
-                Ekatma Manav Darshan. He emphasized a development model rooted in
-                Bharatiya culture, ethics, and social harmony, advocating for
-                self-reliance, self-rule, and uplifting the last person
-                in society (Antyodaya).
+                Ekatma Manav Darshan. He emphasized a development model rooted
+                in Bharatiya culture, ethics, and social harmony, advocating for
+                self-reliance, self-rule, and uplifting the last person in
+                society (Antyodaya).
               </p>
               <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
                 A guiding force behind the Bharatiya Jana Sangh, Upadhyaya

@@ -24,13 +24,18 @@ export default function Header() {
   ];
 
   return (
-    <header className={`sticky top-0 z-50 border-b shadow-sm transition-colors duration-200 ${
-      isHome ? "bg-white border-border" : "bg-primary text-white border-primary-700"
-    }`}>
+    <header
+      className={`sticky top-0 z-50 border-b shadow-sm transition-colors duration-200 ${
+        isHome
+          ? "bg-white border-border"
+          : "bg-primary text-white border-primary-700"
+      }`}
+    >
       {/* Tagline Section */}
       <div className="text-center py-2 px-4 bg-primary-50 border-b border-border">
         <p className="text-xs md:text-sm font-semibold tracking-wide text-primary">
-          International Academic Conference • Ekatma Manav Darshan • Bharat's Worldview • 25–27 March 2026
+          International Academic Conference • Ekatma Manav Darshan • Bharat's
+          Worldview • 25–27 March 2026
         </p>
       </div>
 
@@ -70,11 +75,13 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className={`md:hidden pb-6 pt-6 border-t transition-colors duration-200 ${
-            isHome
-              ? "border-border bg-white"
-              : "border-primary-700 bg-primary-600"
-          }`}>
+          <nav
+            className={`md:hidden pb-6 pt-6 border-t transition-colors duration-200 ${
+              isHome
+                ? "border-border bg-white"
+                : "border-primary-700 bg-primary-600"
+            }`}
+          >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link

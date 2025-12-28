@@ -24,18 +24,27 @@ export default function Speakers() {
               Featured Speakers
             </h2>
             <p className="text-base text-black leading-relaxed mb-6">
-              The Ekatma Manav Darshan Conference brings together renowned academics, philosophers, policymakers, and thought leaders from across the world to discuss the Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan and its contemporary relevance.
+              The Ekatma Manav Darshan Conference brings together renowned
+              academics, philosophers, policymakers, and thought leaders from
+              across the world to discuss the Philosophical Foundations and
+              Civilizational Epistemology of Ekatma Manav Darshan and its
+              contemporary relevance.
             </p>
             <p className="text-base text-muted-foreground">
-              Detailed information about keynote speakers, their research interests, and presentation topics will be updated as confirmations are finalized.
+              Detailed information about keynote speakers, their research
+              interests, and presentation topics will be updated as
+              confirmations are finalized.
             </p>
           </div>
 
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Submit Your Research</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Submit Your Research
+            </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Present your work alongside distinguished scholars at this prestigious conference.
+              Present your work alongside distinguished scholars at this
+              prestigious conference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

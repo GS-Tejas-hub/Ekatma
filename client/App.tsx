@@ -37,7 +37,10 @@ export const App = () => (
           <Route path="/knowledge-partners" element={<KnowledgePartners />} />
           <Route path="/call-for-papers" element={<CallForPapers />} />
           <Route path="/reception-committee" element={<ReceptionCommittee />} />
-          <Route path="/organising-committee" element={<OrganisingCommittee />} />
+          <Route
+            path="/organising-committee"
+            element={<OrganisingCommittee />}
+          />
           <Route path="/important-dates" element={<ImportantDates />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/speakers" element={<Speakers />} />

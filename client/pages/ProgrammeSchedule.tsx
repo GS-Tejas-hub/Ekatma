@@ -24,10 +24,15 @@ export default function ProgrammeSchedule() {
               Conference Overview
             </h2>
             <p className="text-base text-black leading-relaxed mb-4">
-              The three-day Ekatma Manav Darshan Conference will feature keynote addresses, research paper presentations, panel discussions, and networking sessions. The program is designed to facilitate comprehensive intellectual engagement on the philosophy of Ekatma Manav Darshan and its contemporary applications.
+              The three-day Ekatma Manav Darshan Conference will feature keynote
+              addresses, research paper presentations, panel discussions, and
+              networking sessions. The program is designed to facilitate
+              comprehensive intellectual engagement on the philosophy of Ekatma
+              Manav Darshan and its contemporary applications.
             </p>
             <p className="text-base text-muted-foreground">
-              Detailed schedule with session timings, speaker names, and venue information will be announced shortly.
+              Detailed schedule with session timings, speaker names, and venue
+              information will be announced shortly.
             </p>
           </div>
 
@@ -37,16 +42,29 @@ export default function ProgrammeSchedule() {
             </h2>
             <div className="space-y-4">
               <div className="bg-white rounded-lg p-6 border-l-4 border-primary">
-                <p className="font-bold text-foreground mb-2">Day 1: 25 March 2026</p>
-                <p className="text-base text-black">Registration, inaugural ceremony, and keynote address</p>
+                <p className="font-bold text-foreground mb-2">
+                  Day 1: 25 March 2026
+                </p>
+                <p className="text-base text-black">
+                  Registration, inaugural ceremony, and keynote address
+                </p>
               </div>
               <div className="bg-white rounded-lg p-6 border-l-4 border-secondary">
-                <p className="font-bold text-foreground mb-2">Day 2: 26 March 2026</p>
-                <p className="text-base text-black">Research presentations, panel discussions, and themed sessions</p>
+                <p className="font-bold text-foreground mb-2">
+                  Day 2: 26 March 2026
+                </p>
+                <p className="text-base text-black">
+                  Research presentations, panel discussions, and themed sessions
+                </p>
               </div>
               <div className="bg-white rounded-lg p-6 border-l-4 border-accent">
-                <p className="font-bold text-foreground mb-2">Day 3: 27 March 2026</p>
-                <p className="text-base text-black">Concluding sessions, synthesizing remarks, and closing ceremony</p>
+                <p className="font-bold text-foreground mb-2">
+                  Day 3: 27 March 2026
+                </p>
+                <p className="text-base text-black">
+                  Concluding sessions, synthesizing remarks, and closing
+                  ceremony
+                </p>
               </div>
             </div>
           </section>
@@ -59,29 +77,45 @@ export default function ProgrammeSchedule() {
               <div className="flex gap-4">
                 <span className="text-2xl text-secondary">✓</span>
                 <div>
-                  <p className="font-bold text-foreground mb-1">Keynote Addresses (60 min)</p>
-                  <p className="text-base text-black">Plenary sessions featuring eminent scholars</p>
+                  <p className="font-bold text-foreground mb-1">
+                    Keynote Addresses (60 min)
+                  </p>
+                  <p className="text-base text-black">
+                    Plenary sessions featuring eminent scholars
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="text-2xl text-secondary">✓</span>
                 <div>
-                  <p className="font-bold text-foreground mb-1">Research Presentations (10 min)</p>
-                  <p className="text-base text-black">Author presentations with Q&A</p>
+                  <p className="font-bold text-foreground mb-1">
+                    Research Presentations (10 min)
+                  </p>
+                  <p className="text-base text-black">
+                    Author presentations with Q&A
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="text-2xl text-secondary">✓</span>
                 <div>
-                  <p className="font-bold text-foreground mb-1">Panel Discussions (90 min)</p>
-                  <p className="text-base text-black">Focused discussions on specific themes</p>
+                  <p className="font-bold text-foreground mb-1">
+                    Panel Discussions (90 min)
+                  </p>
+                  <p className="text-base text-black">
+                    Focused discussions on specific themes
+                  </p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="text-2xl text-secondary">✓</span>
                 <div>
-                  <p className="font-bold text-foreground mb-1">Networking Sessions</p>
-                  <p className="text-base text-black">Informal gatherings for scholarly exchange</p>
+                  <p className="font-bold text-foreground mb-1">
+                    Networking Sessions
+                  </p>
+                  <p className="text-base text-black">
+                    Informal gatherings for scholarly exchange
+                  </p>
                 </div>
               </div>
             </div>
@@ -89,9 +123,12 @@ export default function ProgrammeSchedule() {
 
           {/* CTA Section */}
           <div className="mt-16 pt-16 border-t border-border text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-4">Mark Your Calendar</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">
+              Mark Your Calendar
+            </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Register now and plan your attendance at this premier academic conference.
+              Register now and plan your attendance at this premier academic
+              conference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

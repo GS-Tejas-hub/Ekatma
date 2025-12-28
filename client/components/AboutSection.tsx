@@ -44,9 +44,9 @@ export default function AboutSection() {
             </h3>
             <p className="text-gray-700 leading-relaxed">
               Ekatma Manav Darshan—the Darshan of the Integrated Universe—is a
-              metaphysical worldview rooted in Rta, the cosmic order. It presents
-              the human being as Ekatma: an indivisible unity of Sharira (body),
-              Manas (mind), Buddhi (intellect), and Atma (soul).
+              metaphysical worldview rooted in Rta, the cosmic order. It
+              presents the human being as Ekatma: an indivisible unity of
+              Sharira (body), Manas (mind), Buddhi (intellect), and Atma (soul).
             </p>
             <p className="text-gray-700 leading-relaxed">
               Rather than a political ideology or sociological model, it is a
@@ -67,8 +67,14 @@ export default function AboutSection() {
             </h3>
             <ul className="space-y-4">
               {[
-                { label: "Virat, Chiti, Rashtra", desc: "Civilizational consciousness" },
-                { label: "Dharma Centric Order", desc: "Ethical social harmony" },
+                {
+                  label: "Virat, Chiti, Rashtra",
+                  desc: "Civilizational consciousness",
+                },
+                {
+                  label: "Dharma Centric Order",
+                  desc: "Ethical social harmony",
+                },
                 {
                   label: "Purushartha Framework",
                   desc: "Integrated human aspiration",
@@ -88,8 +94,12 @@ export default function AboutSection() {
                     ✓
                   </span>
                   <div>
-                    <p className="font-semibold text-foreground">{item.label}</p>
-                    <p className="text-base text-muted-foreground">{item.desc}</p>
+                    <p className="font-semibold text-foreground">
+                      {item.label}
+                    </p>
+                    <p className="text-base text-muted-foreground">
+                      {item.desc}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -121,21 +131,28 @@ export default function AboutSection() {
             Publication & Indexing
           </h3>
           <p className="text-muted-foreground mb-8">
-            Selected papers will be published in the Journal of Indian Council of Philosophical Research (JICPR), which is indexed in major databases and collaborated with Springer.
+            Selected papers will be published in the Journal of Indian Council
+            of Philosophical Research (JICPR), which is indexed in major
+            databases and collaborated with Springer.
           </p>
 
           <div className="space-y-6">
             {/* Journal Information */}
             <div>
-              <h4 className="font-bold text-foreground mb-3">Journal: Indian Council of Philosophical Research (JICPR)</h4>
+              <h4 className="font-bold text-foreground mb-3">
+                Journal: Indian Council of Philosophical Research (JICPR)
+              </h4>
               <p className="text-base text-muted-foreground mb-4">
-                Published in collaboration with Springer | Official Publisher of ICPR
+                Published in collaboration with Springer | Official Publisher of
+                ICPR
               </p>
 
               {/* Indexing Details */}
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
-                  <p className="font-semibold text-foreground mb-2">Indexed Databases</p>
+                  <p className="font-semibold text-foreground mb-2">
+                    Indexed Databases
+                  </p>
                   <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Web of Science (ESCI)</li>
                     <li>✓ Scopus</li>
@@ -143,7 +160,9 @@ export default function AboutSection() {
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-blue-100">
-                  <p className="font-semibold text-foreground mb-2">Impact Metrics Available On</p>
+                  <p className="font-semibold text-foreground mb-2">
+                    Impact Metrics Available On
+                  </p>
                   <ul className="space-y-2 text-base text-muted-foreground">
                     <li>✓ Researcher</li>
                     <li>✓ SCImago Journal Rank (SJR)</li>
@@ -154,54 +173,67 @@ export default function AboutSection() {
 
               {/* Publishing Partners */}
               <div className="bg-white rounded-lg p-6 border border-blue-100">
-                <p className="font-semibold text-foreground mb-4">Publishing Partners & Indexing Services</p>
+                <p className="font-semibold text-foreground mb-4">
+                  Publishing Partners & Indexing Services
+                </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                   {[
                     {
                       name: "Springer",
                       desc: "Publisher",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F7575921c00be4946a339af580a542d48?format=webp&width=800",
-                      color: "bg-red-50"
+                      color: "bg-red-50",
                     },
                     {
                       name: "Web of Science",
                       desc: "Indexing",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2Ffe460099db574780a5917d51ad4e6183?format=webp&width=800",
-                      color: "bg-blue-50"
+                      color: "bg-blue-50",
                     },
                     {
                       name: "Scopus",
                       desc: "Indexing",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6c5171089c4849e0be27a5f907e9a41e?format=webp&width=800",
-                      color: "bg-orange-50"
+                      color: "bg-orange-50",
                     },
                     {
                       name: "Scite.ai",
                       desc: "Analytics",
                       icon: "📊",
-                      color: "bg-green-50"
+                      color: "bg-green-50",
                     },
                     {
                       name: "SJR",
                       desc: "Metrics",
                       icon: "📈",
-                      color: "bg-purple-50"
+                      color: "bg-purple-50",
                     },
                     {
                       name: "ICPR",
                       desc: "Organization",
                       logo: "https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F87758aeb8fc64f33837c30a2bbbae161?format=webp&width=800",
-                      color: "bg-indigo-50"
+                      color: "bg-indigo-50",
                     },
                   ].map((partner, idx) => (
-                    <div key={idx} className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}>
+                    <div
+                      key={idx}
+                      className={`flex flex-col items-center text-center p-4 ${partner.color} rounded-lg hover:shadow-md transition-shadow border border-gray-200`}
+                    >
                       {partner.logo ? (
-                        <img src={partner.logo} alt={partner.name} className="h-12 mb-2 object-contain" />
+                        <img
+                          src={partner.logo}
+                          alt={partner.name}
+                          className="h-12 mb-2 object-contain"
+                        />
                       ) : (
                         <div className="text-3xl mb-2">{partner.icon}</div>
                       )}
-                      <p className="text-base font-bold text-foreground">{partner.name}</p>
-                      <p className="text-base text-muted-foreground mt-1">{partner.desc}</p>
+                      <p className="text-base font-bold text-foreground">
+                        {partner.name}
+                      </p>
+                      <p className="text-base text-muted-foreground mt-1">
+                        {partner.desc}
+                      </p>
                     </div>
                   ))}
                 </div>
@@ -210,9 +242,13 @@ export default function AboutSection() {
 
             {/* Conference Proceedings */}
             <div className="bg-white rounded-lg p-4 border-l-4 border-primary">
-              <p className="font-semibold text-foreground mb-2">Conference Proceedings</p>
+              <p className="font-semibold text-foreground mb-2">
+                Conference Proceedings
+              </p>
               <p className="text-sm text-muted-foreground">
-                Abstracts of all papers will be included in the official Conference Proceedings, with full papers published in the JICPR journal.
+                Abstracts of all papers will be included in the official
+                Conference Proceedings, with full papers published in the JICPR
+                journal.
               </p>
             </div>
           </div>
@@ -229,7 +265,8 @@ export default function AboutSection() {
                 Get Published
               </p>
               <p className="text-sm text-muted-foreground">
-                Peer-reviewed papers published in JICPR (Springer), indexed in Web of Science & Scopus with global reach.
+                Peer-reviewed papers published in JICPR (Springer), indexed in
+                Web of Science & Scopus with global reach.
               </p>
             </div>
             <div>
@@ -261,30 +298,38 @@ export default function AboutSection() {
               {
                 number: 1,
                 title: "Revisit Core Philosophy",
-                description: "To revisit the core philosophy of Ekatma Manava Darshan and understand its relevance in the 21st century."
+                description:
+                  "To revisit the core philosophy of Ekatma Manava Darshan and understand its relevance in the 21st century.",
               },
               {
                 number: 2,
                 title: "Address Modern Challenges",
-                description: "To explore how Bharatiya thought can address social, economic, political, and technological challenges faced by today's world."
+                description:
+                  "To explore how Bharatiya thought can address social, economic, political, and technological challenges faced by today's world.",
               },
               {
                 number: 3,
                 title: "Present as Development Model",
-                description: "To present Ekatma Manava Darshan as a development model compared to materialist and socialist frameworks like the SDGs."
+                description:
+                  "To present Ekatma Manava Darshan as a development model compared to materialist and socialist frameworks like the SDGs.",
               },
               {
                 number: 4,
                 title: "Encourage Academic Dialogue",
-                description: "To encourage academic dialogue across disciplines and promote research rooted in Bharatiya civilizational wisdom."
+                description:
+                  "To encourage academic dialogue across disciplines and promote research rooted in Bharatiya civilizational wisdom.",
               },
               {
                 number: 5,
                 title: "Inspire Integration of Dharma",
-                description: "To inspire policymakers, scholars, and students to integrate Dharma-based thinking into governance, education, and societal development."
+                description:
+                  "To inspire policymakers, scholars, and students to integrate Dharma-based thinking into governance, education, and societal development.",
               },
             ].map((objective, idx) => (
-              <div key={idx} className="bg-white rounded-lg p-6 border border-indigo-100 hover:shadow-md transition-shadow">
+              <div
+                key={idx}
+                className="bg-white rounded-lg p-6 border border-indigo-100 hover:shadow-md transition-shadow"
+              >
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-full bg-primary text-white font-bold text-lg">
@@ -307,9 +352,12 @@ export default function AboutSection() {
 
         {/* CTA Section */}
         <div className="mt-16 pt-16 border-t border-border text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-4">Join the Conference</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-4">
+            Join the Conference
+          </h3>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Be part of a global dialogue on civilizational philosophy and modern challenges.
+            Be part of a global dialogue on civilizational philosophy and modern
+            challenges.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
