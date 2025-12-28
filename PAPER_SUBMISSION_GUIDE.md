@@ -62,7 +62,7 @@ Authors visit `/submit-paper` from:
 2. **Abstract** - Write a 100-500 character abstract
 3. **Keywords** - Add relevant keywords (comma-separated)
 4. **Category** - Select from these options:
-   - Philosophical Foundations
+   - Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan
    - Purushartha Framework
    - Dharma-Centric Society
    - Economic Thought
