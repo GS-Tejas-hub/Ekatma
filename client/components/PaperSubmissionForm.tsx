@@ -184,7 +184,7 @@ export default function PaperSubmissionForm() {
   };
 
   const categories = [
-    "Philosophical Foundations",
+    "Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan",
     "Purushartha Framework",
     "Dharma-Centric Society",
     "Economic Thought",
