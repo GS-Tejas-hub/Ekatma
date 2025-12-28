@@ -76,12 +76,57 @@ export default function OrganisingCommittee() {
             </section>
 
             <section className="bg-white border border-border rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-foreground mb-4">
+              <h2 className="text-2xl font-bold text-foreground mb-8">
                 Committee Members
               </h2>
-              <p className="text-base text-muted-foreground">
-                Detailed information about committee members and their affiliations will be available shortly.
-              </p>
+              <div className="grid md:grid-cols-2 gap-8">
+                {[
+                  {
+                    name: "Prof. Sharanappa V. Halse",
+                    position: "Vice-Chancellor, KSOU",
+                    contact: "vcksou-19@ka.gov.in"
+                  },
+                  {
+                    name: "Shri Raghunandan",
+                    position: "Chief Mentor, Nation Co-convenor, Prajna Pravah"
+                  },
+                  {
+                    name: "Dr. Pradeep Bharadwaj",
+                    position: "Convenor, Prajna Pravah South",
+                    contact: "Pradeepbharadwaja@gmail.com"
+                  },
+                  {
+                    name: "Dr. Niranjan B Poojar",
+                    position: "Convenor, Prajna Pravah North",
+                    contact: "niranjanbgp@cuk.ac.in"
+                  },
+                  {
+                    name: "Dr. Punith Raj K N",
+                    position: "Co-convenor, Prajna Pravah South"
+                  },
+                  {
+                    name: "Shri K N Patil",
+                    position: "Co-convenor, Prajna Pravah North"
+                  },
+                  {
+                    name: "Shri Shivanand Patil",
+                    position: "Co-convenor, Prajna Pravah North"
+                  },
+                  {
+                    name: "Dr. Hanumanth Joshi",
+                    position: "Principal, Sarada Vilas College Mysuru",
+                    contact: "Mysoresvcp@gmail.com"
+                  }
+                ].map((member, idx) => (
+                  <div key={idx} className="border border-border rounded-lg p-6 hover:shadow-md transition-shadow">
+                    <h3 className="text-lg font-bold text-primary mb-2">{member.name}</h3>
+                    <p className="text-base font-semibold text-foreground mb-2">{member.position}</p>
+                    {member.contact && (
+                      <p className="text-base text-muted-foreground">{member.contact}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
             </section>
           </div>
 
