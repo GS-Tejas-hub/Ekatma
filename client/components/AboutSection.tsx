@@ -266,7 +266,7 @@ export default function AboutSection() {
               {
                 number: 2,
                 title: "Address Modern Challenges",
-                description: "To explore how Hindu thought can address social, economic, political, and technological challenges faced by today's world."
+                description: "To explore how Bharatiya thought can address social, economic, political, and technological challenges faced by today's world."
               },
               {
                 number: 3,
