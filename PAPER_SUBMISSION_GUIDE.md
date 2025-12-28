@@ -163,7 +163,7 @@ PAPER-1703001234,Understanding Dharma,Philosophical Foundations,John Doe; Jane S
     "title": "Understanding Dharma",
     "abstract": "Abstract text...",
     "keywords": "Dharma, Ethics",
-    "category": "Philosophical Foundations",
+    "category": "Philosophical Foundations and Civilizational Epistemology of Ekatma Manav Darshan",
     "authors": [
       {
         "name": "John Doe",
