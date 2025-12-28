@@ -2,8 +2,6 @@ export default function ImportantDatesBanner() {
   const dates = [
     { label: "Call for Papers Opens", date: "Now" },
     { label: "Submission Deadline", date: "25 February 2026" },
-    { label: "Author Notification", date: "31 March 2026" },
-    { label: "Camera-Ready Deadline", date: "20 April 2026" },
     { label: "Conference Dates", date: "25-27 March 2026" },
   ];
 
