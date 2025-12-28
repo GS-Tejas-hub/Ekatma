@@ -3,7 +3,7 @@ export default function AboutSection() {
     {
       title: "Global Perspective",
       description:
-        "An international forum exploring civilizational philosophy and its relevance to contemporary global challenges.",
+        "An international movement exploring civilizational philosophy and its relevance to contemporary global challenges.",
       icon: "🌍",
     },
     {
