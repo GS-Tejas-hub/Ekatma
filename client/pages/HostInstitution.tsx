@@ -21,6 +21,13 @@ export default function HostInstitution() {
 
           <div className="space-y-12">
             <section className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-8 border border-primary-200">
+              <div className="flex justify-center mb-6">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F4aa279a8430d441dba9c55f659831878%2F6a3f67e389ad4b11905ee7b9c7d9f83b?format=webp&width=800"
+                  alt="Karnataka State Open University"
+                  className="h-32 w-auto object-contain"
+                />
+              </div>
               <h2 className="text-2xl font-bold text-foreground mb-6">
                 Karnataka State Open University
               </h2>
