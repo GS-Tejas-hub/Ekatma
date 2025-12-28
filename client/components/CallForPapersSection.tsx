@@ -175,7 +175,7 @@ export default function CallForPapersSection() {
                 <div className="border-l-4 border-primary pl-4 py-2">
                   <p className="font-semibold text-foreground text-base mb-1">Presentation Expectations</p>
                   <p className="text-base text-black">
-                    Authors of accepted papers are expected to attend the conference and present their work. Presentation slots are typically 20–25 minutes followed by Q&A.
+                    Authors of accepted papers are expected to attend the conference and present their work. Presentation slots are typically 10 minutes followed by Q&A.
                   </p>
                 </div>
 
