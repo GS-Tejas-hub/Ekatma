@@ -11,10 +11,7 @@ export default function RegistrationSection() {
       title: "Student",
       price: "₹500",
       description: "For currently enrolled students",
-      features: [
-        "Accommodation in Mysore",
-        "All meals included",
-      ],
+      features: ["Accommodation in Mysore", "All meals included"],
       cta: "Register as Student",
     },
     {
@@ -22,10 +19,7 @@ export default function RegistrationSection() {
       title: "Research Scholar",
       price: "₹1,000",
       description: "For PhD students and early-career researchers",
-      features: [
-        "Accommodation in Mysore",
-        "All meals included",
-      ],
+      features: ["Accommodation in Mysore", "All meals included"],
       cta: "Register as Research Scholar",
     },
     {
@@ -33,10 +27,7 @@ export default function RegistrationSection() {
       title: "Academician & Practitioner",
       price: "₹2,000",
       description: "For professors, professionals, and practitioners",
-      features: [
-        "Accommodation in Mysore",
-        "All meals included",
-      ],
+      features: ["Accommodation in Mysore", "All meals included"],
       cta: "Register as Academician",
     },
   ];
