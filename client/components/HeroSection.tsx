@@ -125,7 +125,7 @@ export default function HeroSection() {
                 A guiding force behind the Bharatiya Jana Sangh, Upadhyaya
                 envisioned a nation that balances material progress with moral
                 values, diversity with unity, and tradition with modernity. His
-                ideas continue to inspire socio-political thought in India,
+                ideas continue to inspire socio-political thought in Bharat,
                 promoting a humane and culturally grounded approach to
                 nation-building.
               </p>
