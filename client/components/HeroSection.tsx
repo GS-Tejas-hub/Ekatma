@@ -116,7 +116,7 @@ export default function HeroSection() {
                 Deendayal Upadhyaya was a prominent Indian thinker, philosopher,
                 and political leader known for shaping the ideological
                 foundation of modern Indian politics through his concept of
-                Integral Humanism. He emphasized a development model rooted in
+                Ekatma Manav Darshan. He emphasized a development model rooted in
                 Indian culture, ethics, and social harmony, advocating for
                 self-reliance, decentralization, and uplifting the last person
                 in society (Antyodaya).
