@@ -118,7 +118,7 @@ export default function HeroSection() {
                 foundation of modern Indian politics through his concept of
                 Ekatma Manav Darshan. He emphasized a development model rooted in
                 Bharatiya culture, ethics, and social harmony, advocating for
-                self-reliance, decentralization, and uplifting the last person
+                self-reliance, self-rule, and uplifting the last person
                 in society (Antyodaya).
               </p>
               <p className="text-gray-100 leading-relaxed text-base lg:text-lg">
