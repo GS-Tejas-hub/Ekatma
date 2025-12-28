@@ -223,11 +223,9 @@ export default function RegistrationSection() {
             {/* Payment Info Box */}
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
               <p className="text-sm text-blue-900 leading-relaxed">
-                <span className="font-semibold">Note:</span> Payments are
-                processed securely through Stripe. Your payment details are
-                encrypted and never stored on our servers. You will receive a
-                confirmation email with your registration details immediately
-                after payment.
+                <span className="font-semibold">Note:</span> You will receive a
+                confirmation email with your registration details. Payment
+                processing details will be provided upon selection.
               </p>
             </div>
 
