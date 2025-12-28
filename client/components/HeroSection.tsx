@@ -117,7 +117,7 @@ export default function HeroSection() {
                 and political leader known for shaping the ideological
                 foundation of modern Indian politics through his concept of
                 Ekatma Manav Darshan. He emphasized a development model rooted in
-                Indian culture, ethics, and social harmony, advocating for
+                Bharatiya culture, ethics, and social harmony, advocating for
                 self-reliance, decentralization, and uplifting the last person
                 in society (Antyodaya).
               </p>
