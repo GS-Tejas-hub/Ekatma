@@ -34,10 +34,6 @@ export default function AboutSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             About the Conference
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            An international academic forum commemorating 60 years of Pandit
-            Deendayal Upadhyaya's historic lectures on Ekatma Manav Darshan
-          </p>
         </div>
 
         {/* Main Content */}
