@@ -106,7 +106,7 @@ export default function CallForPapersSection() {
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
             Thematic Areas
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {topics.map((topic, idx) => (
               <div
                 key={idx}
